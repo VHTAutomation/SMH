@@ -20,11 +20,11 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Trang chu/Dich vu Camera/btn_Dich_vu_camera'), 0)
+Mobile.tap(findTestObject('ObjectManTrangChu/ObjectManDichVuCamera/btn_Dich_vu_camera'), 0)
 
-Mobile.verifyElementExist(findTestObject('Trang chu/Dich vu Camera/title_thiet_bi_ho_tro'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectManTrangChu/ObjectManDichVuCamera/title_thiet_bi_ho_tro'), 0)
 
-Mobile.tap(findTestObject('Trang chu/Dich vu Camera/thiet_bi_ho_tro_btn_Tat_ca'), 0)
+Mobile.tap(findTestObject('ObjectManTrangChu/ObjectManDichVuCamera/thiet_bi_ho_tro_btn_Tat_ca'), 0)
 
 // XPath tìm phần tử có text 'ABC'
 TestObject element = new TestObject('a')
@@ -41,8 +41,8 @@ if (Mobile.verifyElementExist(element, 10)) {
 } else {
     println('Không tìm thấy đối tượng có text \'ABC\'')
 }
-ten_cam = Mobile.getText(findTestObject('Dich vu Camera/ten_cam'), 0)
-Mobile.tap(findTestObject('Dich vu Camera/btn_Dang_ky_ngay'), 0)
+ten_cam = Mobile.getText(findTestObject('ObjectDichVuCamera/ten_cam'), 0)
+Mobile.tap(findTestObject('ObjectDichVuCamera/btn_Dang_ky_ngay'), 0)
 
 WebUI.callTestCase(findTestCase('Mua gói Cloud/TC Re-use/Man dang ky luu tru cloud/Gia han tu dong bang TKLK_ chua co TKLK'), 
     [:], FailureHandling.STOP_ON_FAILURE)

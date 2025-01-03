@@ -19,17 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Thong bao/icon_qua_chuong'), 0)
+Mobile.tap(findTestObject('ObjectThongBao/icon_qua_chuong'), 0)
 
-Mobile.tap(findTestObject('Thong bao/thong bao Camera/tab_camera'), 0)
+Mobile.tap(findTestObject('ObjectThongBao/thong bao Camera/tab_camera'), 0)
 
-Mobile.tap(findTestObject('Thong bao/thong bao Camera/textbox_camera'), 0)
+Mobile.tap(findTestObject('ObjectThongBao/thong bao Camera/textbox_camera'), 0)
 
-Mobile.tap(findTestObject('Thong bao/thong bao Camera/loc_camera_chon_cam_1'), 0)
+Mobile.tap(findTestObject('ObjectThongBao/thong bao Camera/loc_camera_chon_cam_1'), 0)
 
 Mobile.checkElement(findTestObject(null), 0)
 
-Mobile.verifyElementText(findTestObject('Thong bao/thong bao Camera/list_event_Khong_c_su_kien'), 'Không có sự kiện được phát hiện')
+Mobile.verifyElementText(findTestObject('ObjectThongBao/thong bao Camera/list_event_Khong_c_su_kien'), 'Không có sự kiện được phát hiện')
 
 Mobile.closeApplication()
 

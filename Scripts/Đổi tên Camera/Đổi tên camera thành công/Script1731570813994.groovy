@@ -19,37 +19,37 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Tab Thiết bị/Tab_Thietbi'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/chon_cam_dau_tien_danh_sach'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/chon_cam_dau_tien_danh_sach'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Tab Thiết bị/btn_cai_dat'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectManThietBi/btn_cai_dat'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Tab Thiết bị/icon_mo_rong_ten_cam'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectManThietBi/icon_mo_rong_ten_cam'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Tab Thiết bị/title_doi_ten_cam'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectManThietBi/title_doi_ten_cam'), 0)
 
-Mobile.clearText(findTestObject('Object Repository/Tab Thiết bị/edit_ten_cam'), 0)
+Mobile.clearText(findTestObject('Object Repository/ObjectManThietBi/edit_ten_cam'), 0)
 
-Mobile.sendKeys(findTestObject('Tab Thiết bị/edit_ten_cam(1)'), 'Test@123')
+Mobile.sendKeys(findTestObject('ObjectManThietBi/edit_ten_cam(1)'), 'Test@123')
 
-Mobile.tap(findTestObject('Object Repository/Tab Thiết bị/btn - OK_doi_ten_cam'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectManThietBi/btn - OK_doi_ten_cam'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Tab Thiết bị/title_doi_ten_cam_thanh_cong'), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/ObjectManThietBi/title_doi_ten_cam_thanh_cong'), 0)
 
-String reName = Mobile.getText(findTestObject('Settings Cam/cai_dat_ten_cam'), 0)
+String reName = Mobile.getText(findTestObject('ObjectCaiDatCamera/cai_dat_ten_cam'), 0)
 
 Mobile.verifyMatch(reName, 'Test@123', false)
 
-Mobile.tap(findTestObject('Tab Thiết bị/cai_dat_icon_back'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/cai_dat_icon_back'), 0)
 
-Mobile.verifyElementText(findTestObject('Tab Thiết bị/liveview_title_ten_cam'), reName)
+Mobile.verifyElementText(findTestObject('ObjectManThietBi/liveview_title_ten_cam'), reName)
 
-Mobile.tap(findTestObject('Tab Thiết bị/liveview_icon_back'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/liveview_icon_back'), 0)
 
-Mobile.verifyElementText(findTestObject('Tab Thiết bị/chon_cam_dau_tien_danh_sach'), reName)
+Mobile.verifyElementText(findTestObject('ObjectManThietBi/chon_cam_dau_tien_danh_sach'), reName)
 
 Mobile.closeApplication()
 

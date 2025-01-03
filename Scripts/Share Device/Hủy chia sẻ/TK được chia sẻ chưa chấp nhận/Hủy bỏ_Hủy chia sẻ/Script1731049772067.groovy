@@ -19,25 +19,25 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.viettel.vhome2')
 
-Mobile.tap(findTestObject('Tab Thiết bị/Tab_Thietbi'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/choncam - CNME00000586'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/choncam - CNME00000586'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/tab_tinh_nang'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/btn_chiaseTB'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_chiaseTB'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Share device/title_chia_se_thiet_bi'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi'), 0)
 
-Mobile.tap(findTestObject('Share device/chiaseTB_btn_huychiase'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/chiaseTB_btn_huychiase'), 0)
 
-Mobile.tap(findTestObject('Share device/chitietchiase_btn_huy'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/chitietchiase_btn_huy'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Share device/popup_xac_nhan_Huy'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/popup_xac_nhan_Huy'), 0)
 
-Mobile.tap(findTestObject('Share device/btn_Huy_Huychiase'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_Huy_Huychiase'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Share device/title_chi_tiet_chia_se'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chi_tiet_chia_se'), 0)
 
 Mobile.closeApplication()
 
