@@ -19,11 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.setText(findTestObject('Login/Textbox_SDT'), GlobalVariable.user_share, 0)
+Mobile.setText(findTestObject('ObjectManDangNhap/Textbox_SDT'), GlobalVariable.user_share, 0)
 
-Mobile.setText(findTestObject('Login/textbox_Matkhau'), GlobalVariable.pass_user_share, 0)
+Mobile.setText(findTestObject('ObjectManDangNhap/textbox_Matkhau'), GlobalVariable.pass_user_share, 0)
 
-Mobile.tap(findTestObject('Login/btn_Dangnhap'), 0)
+Mobile.tap(findTestObject('ObjectManDangNhap/btn_Dangnhap'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Login/tab Trang_chu'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectManDangNhap/tab Trang_chu'), 0)
 

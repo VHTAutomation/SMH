@@ -19,15 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Thong bao/icon_qua_chuong'), 0)
+Mobile.tap(findTestObject('ObjectThongBao/icon_qua_chuong'), 0)
 
-Mobile.tap(findTestObject('Thong bao/thong bao Camera/tab_camera'), 0)
+Mobile.tap(findTestObject('ObjectThongBao/thong bao Camera/tab_camera'), 0)
 
-Mobile.tap(findTestObject('Thong bao/thong bao Camera/textbox_loc_su_kien'), 0)
+Mobile.tap(findTestObject('ObjectThongBao/thong bao Camera/textbox_loc_su_kien'), 0)
 
-Mobile.tap(findTestObject('Thong bao/thong bao Camera/loc_su_kien_phat_hien_nguoi'), 0)
+Mobile.tap(findTestObject('ObjectThongBao/thong bao Camera/loc_su_kien_phat_hien_nguoi'), 0)
 
-Mobile.verifyElementText(findTestObject('Thong bao/thong bao Camera/loc_su_kien_phat_hien_nguoi'), 'Phát hiện người')
+Mobile.verifyElementText(findTestObject('ObjectThongBao/thong bao Camera/loc_su_kien_phat_hien_nguoi'), 'Phát hiện người')
 
 Mobile.closeApplication()
 

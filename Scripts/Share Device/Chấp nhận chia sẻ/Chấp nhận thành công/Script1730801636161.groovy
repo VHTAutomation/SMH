@@ -19,23 +19,42 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Đăng nhập/Đăng nhập thành công'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Share device/title_ban_dang_co_thiet_bi_cho_chap_nhan'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('Object Repository/ObjectChiaSeThietBi/title_ban_dang_co_thiet_bi_cho_chap_nhan'), 0)
+=======
+Mobile.tap(findTestObject('Object Repository/ObjectChiaSeThietBi/title_ban_dang_co_thiet_chi_cho_chap_nhan'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Object Repository/Share device/tb_doi_chap_nhan_choncam - 46674403b7b6e043'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectChiaSeThietBi/tb_doi_chap_nhan_choncam - 46674403b7b6e043'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Share device/Chon_nha_chap_nhan'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectChiaSeThietBi/Chon_nha_chap_nhan'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Share device/chon_Nha_cua_toi'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectChiaSeThietBi/chon_Nha_cua_toi'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Share device/Button_Chap_Nhan'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectChiaSeThietBi/Button_Chap_Nhan'), 0)
 
-//Mobile.verifyElementExist(findTestObject('Object Repository/Share device/title_Ban_da_chap_nhan_ TB_46674403b7b6e043 c chia s t ti khon 0969992895'), 
+<<<<<<< HEAD
+//Mobile.verifyElementExist(findTestObject('Object Repository/ObjectChiaSeThietBi/title_Ban_da_chap_nhan_ TB_46674403b7b6e043 c chia s t ti khon 0969992895'), 
 //    0)
-Mobile.tap(findTestObject('Share device/btnBack'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
+=======
+Mobile.verifyElementExist(findTestObject('Object Repository/ObjectChiaSeThietBi/title_Ban_da_chap_nhan_ TB_46674403b7b6e043 c chia s t ti khon 0969992895'), 
+    0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Tab Thiết bị/Tab_Thietbi'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
+=======
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.verifyElementExist(findTestObject('Tab Thiết bị/opt_cam_duoc_chia_se'), 0)
+<<<<<<< HEAD
+Mobile.verifyElementExist(findTestObject('ObjectManThietBi/opt_cam_duoc_chia_se'), 0)
+=======
+Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
+
+Mobile.verifyElementExist(findTestObject('ObjectManThietBi/chon_cam - 46674403b7b6e043'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.closeApplication()
 

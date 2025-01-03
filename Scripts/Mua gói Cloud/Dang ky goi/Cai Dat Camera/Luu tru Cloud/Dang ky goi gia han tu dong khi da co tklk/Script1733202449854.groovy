@@ -19,19 +19,27 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Tab Thiết bị/tab_thiet_bi'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/tab_thiet_bi'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/chon_cam_dau_tien_danh_sach'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/chon_cam_dau_tien_danh_sach'), 0)
 
-ten_cam = Mobile.getText(findTestObject('Tab Thiết bị/liveview_title_ten_cam'), 0)
+ten_cam = Mobile.getText(findTestObject('ObjectManThietBi/liveview_title_ten_cam'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/btn_cai_dat'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_cai_dat'), 0)
 
 Mobile.scrollToText('Dịch vụ Camera', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Settings Cam/Cai_dat_btn_Het_han'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/Cai_dat_btn_Het_han'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Cai_dat_btn_Het_han'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/Dich vu Cloud/Dich_vu_Cloud_btn_Dang_ky_ngay'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/Dich_vu_Cloud_btn_Dang_ky_ngay'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/Dich_vu_Cloud_btn_Dang_ky_ngay'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 WebUI.callTestCase(findTestCase('Mua gói Cloud/TC Re-use/Man dang ky luu tru cloud/Gia han tu dong bang TKLK_co TKLK'), 
     [:], FailureHandling.STOP_ON_FAILURE)
