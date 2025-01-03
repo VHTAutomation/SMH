@@ -19,41 +19,81 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID)
 
-Mobile.tap(findTestObject('Tab Thiết bị/Tab_Thietbi'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/chon_cam_t2_trong_danh_sach'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/chon_cam_t2_trong_danh_sach'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Tab Thiết bị/btn_cai_dat'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectManThietBi/btn_cai_dat'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Settings Cam/ma hoa/btn_doi_mat_khau_ma_hoa'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDatCamera/ObjectMaHoa/btn_doi_mat_khau_ma_hoa'), 0)
+=======
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/btn_doi_mat_khau_ma_hoa'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Object Repository/Settings Cam/ma hoa/textbox_mat_khau_cu_ma_hoa'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDatCamera/ObjectMaHoa/textbox_mat_khau_cu_ma_hoa'), 0)
+=======
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/textbox_mat_khau_cu_ma_hoa'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.setText(findTestObject('Object Repository/Settings Cam/ma hoa/textbox_mat_khau_cu_ma_hoa (1)'), GlobalVariable.ma_hoa_live, 
+<<<<<<< HEAD
+Mobile.setText(findTestObject('Object Repository/ObjectCaiDatCamera/ObjectMaHoa/textbox_mat_khau_cu_ma_hoa (1)'), GlobalVariable.ma_hoa_live, 
+=======
+Mobile.setText(findTestObject('Object Repository/ObjectCaiDat/ma hoa/textbox_mat_khau_cu_ma_hoa (1)'), GlobalVariable.ma_hoa_live, 
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
     0)
 
-Mobile.tap(findTestObject('Object Repository/Settings Cam/ma hoa/textbox_mat_khau_moi_ma_hoa'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDatCamera/ObjectMaHoa/textbox_mat_khau_moi_ma_hoa'), 0)
+=======
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/textbox_mat_khau_moi_ma_hoa'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.setText(findTestObject('Settings Cam/ma hoa/textbox_mat_khau_moi_ma_hoa'), GlobalVariable.ma_hoa_live, 0)
+<<<<<<< HEAD
+Mobile.setText(findTestObject('ObjectCaiDatCamera/ObjectMaHoa/textbox_mat_khau_moi_ma_hoa'), GlobalVariable.ma_hoa_live, 0)
+=======
+Mobile.setText(findTestObject('ObjectCaiDat/ma hoa/textbox_mat_khau_moi_ma_hoa'), GlobalVariable.ma_hoa_live, 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Object Repository/Settings Cam/ma hoa/textbox_nhap_lai_mat_khau_moi_ma_hoa'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDatCamera/ObjectMaHoa/textbox_nhap_lai_mat_khau_moi_ma_hoa'), 0)
+=======
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/textbox_nhap_lai_mat_khau_moi_ma_hoa'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.setText(findTestObject('Settings Cam/ma hoa/textbox_nhap_lai_mat_khau_moi_ma_hoa'), GlobalVariable.ma_hoa_live, 0)
+<<<<<<< HEAD
+Mobile.setText(findTestObject('ObjectCaiDatCamera/ObjectMaHoa/textbox_nhap_lai_mat_khau_moi_ma_hoa'), GlobalVariable.ma_hoa_live, 0)
+=======
+Mobile.setText(findTestObject('ObjectCaiDat/ma hoa/textbox_nhap_lai_mat_khau_moi_ma_hoa'), GlobalVariable.ma_hoa_live, 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Object Repository/Settings Cam/ma hoa/btn_xac_nhan'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDatCamera/ObjectMaHoa/btn_xac_nhan'), 0)
+=======
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/btn_xac_nhan'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 'get text trong popup báo lỗi'
-String error_text = Mobile.getText(findTestObject('Settings Cam/ma hoa/popup_mat_khau_moi_trung_voi_mat_khau_cu'), 0)
+<<<<<<< HEAD
+String error_text = Mobile.getText(findTestObject('ObjectCaiDatCamera/ObjectMaHoa/popup_mat_khau_moi_trung_voi_mat_khau_cu'), 0)
+=======
+String error_text = Mobile.getText(findTestObject('ObjectCaiDat/ma hoa/popup_mat_khau_moi_trung_voi_mat_khau_cu'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 'so sánh'
 Mobile.verifyEqual(error_text, 'Mật khẩu mới không được trùng với mật khẩu cũ', FailureHandling.STOP_ON_FAILURE)
 
 'verify text inline'
-Mobile.verifyElementText(findTestObject('Settings Cam/ma hoa/text_mat_khau_moi_khong_hop_le'), 'Mật khẩu mới không hợp lệ')
+<<<<<<< HEAD
+Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectMaHoa/text_mat_khau_moi_khong_hop_le'), 'Mật khẩu mới không hợp lệ')
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/ma hoa/text_mat_khau_moi_khong_hop_le'), 'Mật khẩu mới không hợp lệ')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.closeApplication()
 

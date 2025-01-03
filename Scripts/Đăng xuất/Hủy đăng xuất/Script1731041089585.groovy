@@ -19,15 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Share device/tab_ca_nhan'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/tab_ca_nhan'), 0)
 
-Mobile.tap(findTestObject('Login/btn Dang_xuat'), 0)
+Mobile.tap(findTestObject('ObjectManDangNhap/btn Dang_xuat'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Login/popup_ban_co_muon_dang_xuat'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectManDangNhap/popup_ban_co_muon_dang_xuat'), 0)
 
-Mobile.tap(findTestObject('Login/btn Huy bo dang xuat'), 0)
+Mobile.tap(findTestObject('ObjectManDangNhap/btn Huy bo dang xuat'), 0)
 
-Mobile.verifyElementExist(findTestObject('Login/btn Dang_xuat'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectManDangNhap/btn Dang_xuat'), 0)
 
 Mobile.closeApplication()
 

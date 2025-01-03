@@ -19,37 +19,93 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/Dich vu Cloud/Dich_vu_cloud_btn_Lich_su_mua_hang'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/Dich_vu_cloud_btn_Lich_su_mua_hang'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/Dich_vu_cloud_btn_Lich_su_mua_hang'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/title_lich_su_mua_hang'), 'Lịch sử mua hàng')
+<<<<<<< HEAD
+Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/title_lich_su_mua_hang'), 'Lịch sử mua hàng')
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/title_lich_su_mua_hang'), 'Lịch sử mua hàng')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/Lich su mua hang/lich_su_mua_hang_title_luu_tru_su_kien_x_ngay'), 
+<<<<<<< HEAD
+Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Lich su mua hang/lich_su_mua_hang_title_luu_tru_su_kien_x_ngay'), 
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Lich su mua hang/lich_su_mua_hang_title_luu_tru_su_kien_x_ngay'), 
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
     ten_goi)
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/Lich su mua hang/lich_su_mua_hang_text_dang_su_dung'), 
+<<<<<<< HEAD
+Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Lich su mua hang/lich_su_mua_hang_text_dang_su_dung'), 
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Lich su mua hang/lich_su_mua_hang_text_dang_su_dung'), 
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
     trang_thai)
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/Lich su mua hang/lich_su_mua_hang_gia_goi'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Lich su mua hang/lich_su_mua_hang_gia_goi'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/Lich su mua hang/lich_su_mua_hang_gia_goi'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/title_chi_tiet_thanh_toan'), 'Chi tiết thanh toán')
+<<<<<<< HEAD
+Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/title_chi_tiet_thanh_toan'), 'Chi tiết thanh toán')
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/title_chi_tiet_thanh_toan'), 'Chi tiết thanh toán')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/Chi tiet thanh toan/chi_tiet_thanh_toan_ten_thiet_bi'), 
+<<<<<<< HEAD
+Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Chi tiet thanh toan/chi_tiet_thanh_toan_ten_thiet_bi'), 
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Chi tiet thanh toan/chi_tiet_thanh_toan_ten_thiet_bi'), 
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
     ten_cam)
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/Chi tiet thanh toan/chi_tiet_thanh_toan_ten_goi_cuoc'), 
+<<<<<<< HEAD
+Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Chi tiet thanh toan/chi_tiet_thanh_toan_ten_goi_cuoc'), 
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Chi tiet thanh toan/chi_tiet_thanh_toan_ten_goi_cuoc'), 
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
     ten_goi_cuoc)
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/Chi tiet thanh toan/chi_tiet_thanh_toan_trang_thai_su_dung'), 
+<<<<<<< HEAD
+Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Chi tiet thanh toan/chi_tiet_thanh_toan_trang_thai_su_dung'), 
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Chi tiet thanh toan/chi_tiet_thanh_toan_trang_thai_su_dung'), 
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
     trang_thai)
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/Chi tiet thanh toan/chi_tiet_thanh_toan_gia_tien'), 
+<<<<<<< HEAD
+Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Chi tiet thanh toan/chi_tiet_thanh_toan_gia_tien'), 
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Chi tiet thanh toan/chi_tiet_thanh_toan_gia_tien'), 
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
     gia_goi_cuoc)
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/btn_back'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/btn_back'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/btn_back'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.verifyElementVisible(findTestObject('Settings Cam/Luu tru Cloud/title_lich_su_mua_hang'), 0)
+<<<<<<< HEAD
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/title_lich_su_mua_hang'), 0)
+=======
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDat/Luu tru Cloud/title_lich_su_mua_hang'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/btn_back'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/btn_back'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/btn_back'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.verifyElementVisible(findTestObject('Settings Cam/Luu tru Cloud/title_dich_vu_cloud'), 0)
+<<<<<<< HEAD
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/title_dich_vu_cloud'), 0)
+=======
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDat/Luu tru Cloud/title_dich_vu_cloud'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
