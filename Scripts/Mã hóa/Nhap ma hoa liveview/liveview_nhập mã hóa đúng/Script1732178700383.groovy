@@ -19,20 +19,20 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID)
 
-Mobile.tap(findTestObject('Tab Thiết bị/Tab_Thietbi'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/chon_cam_t2_trong_danh_sach'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/chon_cam_t2_trong_danh_sach'), 0)
 
-Mobile.verifyElementExist(findTestObject('Tab Thiết bị/Liveview_title_nhap_mat_khau_ma_hoa_'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectManThietBi/Liveview_title_nhap_mat_khau_ma_hoa_'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/liveview_textbox_nhap_ma_hoa'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/liveview_textbox_nhap_ma_hoa'), 0)
 
-Mobile.setText(findTestObject('Tab Thiết bị/liveview_textbox_nhap_ma_hoa'), GlobalVariable.ma_hoa_live, 0)
+Mobile.setText(findTestObject('ObjectManThietBi/liveview_textbox_nhap_ma_hoa'), GlobalVariable.ma_hoa_live, 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/liview_ma_hoa_btn_OK'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/liview_ma_hoa_btn_OK'), 0)
 
 //verify button Đàm thoại
-String button_damthoai = Mobile.getAttribute(findTestObject('Object Repository/Share device/liveview_icon_dam_thoai'), enable, 
+String button_damthoai = Mobile.getAttribute(findTestObject('Object Repository/ObjectChiaSeThietBi/liveview_icon_dam_thoai'), enable, 
     10)
 
 if (button_damthoai == true) {
@@ -41,9 +41,9 @@ if (button_damthoai == true) {
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Tab Thiết bị/btn_cai_dat'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectManThietBi/btn_cai_dat'), 0)
 
-Mobile.verifyElementExist(findTestObject('Settings Cam/cai_dat_thong_bao'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectCaiDat/cai_dat_thong_bao'), 0)
 
 Mobile.closeApplication()
 

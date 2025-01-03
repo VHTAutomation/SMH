@@ -20,9 +20,9 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Trang chu/Dich vu Camera/btn_Dich_vu_camera'), 0)
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/btn_Dich_vu_camera'), 0)
 
-Mobile.tap(findTestObject('Trang chu/Dich vu Camera/btn_dang_ky_dich_vu'), 0)
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/btn_dang_ky_dich_vu'), 0)
 
 // XPath tìm phần tử có text 'ABC'
 TestObject element = new TestObject('a')

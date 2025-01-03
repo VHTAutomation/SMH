@@ -20,11 +20,11 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Trang chu/Dich vu Camera/btn_Dich_vu_camera'), 0)
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/btn_Dich_vu_camera'), 0)
 
-Mobile.verifyElementExist(findTestObject('Trang chu/Dich vu Camera/title_Luu_tru_cloud'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectManTrangchu/Dich vu Camera/title_Luu_tru_cloud'), 0)
 
-Mobile.tap(findTestObject('Trang chu/Dich vu Camera/Luu_tru_cloud_btn_Xem_them'), 0)
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/Luu_tru_cloud_btn_Xem_them'), 0)
 
 Mobile.tap(findTestObject('Dich vu Camera/luu_tru_cloud_btn_dang_ky_dich_vu'), 0)
 

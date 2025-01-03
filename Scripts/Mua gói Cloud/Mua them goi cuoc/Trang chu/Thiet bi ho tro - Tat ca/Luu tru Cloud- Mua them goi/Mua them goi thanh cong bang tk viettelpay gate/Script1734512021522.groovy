@@ -20,11 +20,11 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Trang chu/Dich vu Camera/btn_Dich_vu_camera'), 0)
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/btn_Dich_vu_camera'), 0)
 
-Mobile.verifyElementExist(findTestObject('Trang chu/Dich vu Camera/title_thiet_bi_ho_tro'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectManTrangchu/Dich vu Camera/title_thiet_bi_ho_tro'), 0)
 
-Mobile.tap(findTestObject('Trang chu/Dich vu Camera/thiet_bi_ho_tro_btn_Tat_ca'), 0)
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/thiet_bi_ho_tro_btn_Tat_ca'), 0)
 
 // XPath tìm phần tử có icon X
 TestObject element = new TestObject('a')
@@ -46,43 +46,43 @@ ten_cam = Mobile.getText(findTestObject('Dich vu Camera/ten_cam'), 0)
 
 Mobile.tap(findTestObject('Dich vu Camera/luu_tru_cloud_icon_mo_rong'), 0)
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_btn_mua_them_goi'), 0)
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_btn_mua_them_goi'), 0)
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/ten_thiet_bi_dang_ky'), ten_cam)
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/ten_thiet_bi_dang_ky'), ten_cam)
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/btn_luu_tru_su_kien_3_ngay'), 0)
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/btn_luu_tru_su_kien_3_ngay'), 0)
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/check_box_luu_tru_7_ngay'), 0)
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/check_box_luu_tru_7_ngay'), 0)
 
-goi_luu_tru = Mobile.getText(findTestObject('Settings Cam/Luu tru Cloud/btn_luu_tru_su_kien_3_ngay'), 0)
+goi_luu_tru = Mobile.getText(findTestObject('ObjectCaiDat/Luu tru Cloud/btn_luu_tru_su_kien_3_ngay'), 0)
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/chon_5_phut'), 0)
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/chon_5_phut'), 0)
 
-gia_goi_cuoc = Mobile.getText(findTestObject('Settings Cam/Luu tru Cloud/Dang ky luu tru cloud/Dang_ky_cloud_gia_goi'), 
+gia_goi_cuoc = Mobile.getText(findTestObject('ObjectCaiDat/Luu tru Cloud/Dang ky luu tru cloud/Dang_ky_cloud_gia_goi'), 
     0)
 
 Mobile.scrollToText('Điều khoản Viettel Home.', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementNotExist(findTestObject('Settings Cam/Luu tru Cloud/btn_gia_han_tu_dong'), 0)
+Mobile.verifyElementNotExist(findTestObject('ObjectCaiDat/Luu tru Cloud/btn_gia_han_tu_dong'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Settings Cam/Luu tru Cloud/Chon_tai_khoan_lien_ket'), 10)
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/Luu tru Cloud/Chon_tai_khoan_lien_ket'), 10)
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/btn_thanh_toan'), 0)
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/btn_thanh_toan'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Settings Cam/Luu tru Cloud/popup_thong_bao_ma_xac_minh'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_thong_bao_ma_xac_minh'), 0)
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/popup_ma_xac_minh_btn_OK'), 0)
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_ma_xac_minh_btn_OK'), 0)
 
-Mobile.sendKeys(findTestObject('Settings Cam/Luu tru Cloud/textbox_nhap_otp'), '123123')
+Mobile.sendKeys(findTestObject('ObjectCaiDat/Luu tru Cloud/textbox_nhap_otp'), '123123')
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/btn_xac_nhan_otp'), 0)
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/btn_xac_nhan_otp'), 0)
 
-Mobile.verifyElementExist(findTestObject('Settings Cam/Luu tru Cloud/title_dich_vu_cloud'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectCaiDat/Luu tru Cloud/title_dich_vu_cloud'), 0)
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_trang_thai_chua_kich_hoat'), 
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_trang_thai_chua_kich_hoat'), 
     'Chưa kích hoạt')
 
-Mobile.verifyElementExist(findTestObject('Settings Cam/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_btn_mua_them_goi'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_btn_mua_them_goi'), 0)
 
 WebUI.callTestCase(findTestCase('Mua gói Cloud/TC Re-use/Man Lich su mua hang - Chi tiet mua hang'), [:], FailureHandling.STOP_ON_FAILURE)
 

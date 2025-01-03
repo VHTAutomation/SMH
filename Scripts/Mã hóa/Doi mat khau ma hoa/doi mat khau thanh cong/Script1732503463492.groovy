@@ -19,42 +19,42 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID)
 
-Mobile.tap(findTestObject('Tab Thiết bị/Tab_Thietbi'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/chon_cam_t2_trong_danh_sach'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/chon_cam_t2_trong_danh_sach'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Tab Thiết bị/btn_cai_dat'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectManThietBi/btn_cai_dat'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Settings Cam/ma hoa/btn_doi_mat_khau_ma_hoa'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/btn_doi_mat_khau_ma_hoa'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Settings Cam/ma hoa/textbox_mat_khau_cu_ma_hoa'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/textbox_mat_khau_cu_ma_hoa'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Settings Cam/ma hoa/textbox_mat_khau_cu_ma_hoa (1)'), GlobalVariable.ma_hoa_live, 
+Mobile.setText(findTestObject('Object Repository/ObjectCaiDat/ma hoa/textbox_mat_khau_cu_ma_hoa (1)'), GlobalVariable.ma_hoa_live, 
     0)
 
-Mobile.tap(findTestObject('Object Repository/Settings Cam/ma hoa/textbox_mat_khau_moi_ma_hoa'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/textbox_mat_khau_moi_ma_hoa'), 0)
 
-Mobile.setText(findTestObject('Settings Cam/ma hoa/textbox_mat_khau_moi_ma_hoa'), GlobalVariable.new_pass_ma_hoa, 0)
+Mobile.setText(findTestObject('ObjectCaiDat/ma hoa/textbox_mat_khau_moi_ma_hoa'), GlobalVariable.new_pass_ma_hoa, 0)
 
-Mobile.tap(findTestObject('Object Repository/Settings Cam/ma hoa/textbox_nhap_lai_mat_khau_moi_ma_hoa'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/textbox_nhap_lai_mat_khau_moi_ma_hoa'), 0)
 
-Mobile.setText(findTestObject('Settings Cam/ma hoa/textbox_nhap_lai_mat_khau_moi_ma_hoa'), GlobalVariable.new_pass_ma_hoa, 
+Mobile.setText(findTestObject('ObjectCaiDat/ma hoa/textbox_nhap_lai_mat_khau_moi_ma_hoa'), GlobalVariable.new_pass_ma_hoa, 
     0)
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Object Repository/Settings Cam/ma hoa/btn_xac_nhan'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/btn_xac_nhan'), 0)
 
 'get text trong popup báo lỗi'
-String message = Mobile.getText(findTestObject('Settings Cam/ma hoa/popup_doi_mat_khau_ma_hoa_thanh_cong'), 0)
+String message = Mobile.getText(findTestObject('ObjectCaiDat/ma hoa/popup_doi_mat_khau_ma_hoa_thanh_cong'), 0)
 
 'so sánh'
 Mobile.verifyEqual(message, 'Đổi mật khẩu mã hóa thành công', FailureHandling.STOP_ON_FAILURE)
 
 'verify text inline'
-Mobile.verifyElementVisible(findTestObject('Settings Cam/cai_dat_thong_bao'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDat/cai_dat_thong_bao'), 0)
 
 Mobile.closeApplication()
 

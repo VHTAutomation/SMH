@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
@@ -7,12 +6,12 @@
    <UUID>08d7f253-e398-4aa6-9f76-f286fd631193</UUID>
    <createdEdition>FREE</createdEdition>
    <createdVersion>9.7.2</createdVersion>
-   <freeLicense>true</freeLicense>
+   <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>FREE</modifiedEdition>
    <modifiedVersion>9.7.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\Admin\Katalon Studio\SMH_GiangNew\FisrtProject.prj</projectFileLocation>
+   <projectFileLocation>D:\Katalon\SMH_QuynhhtNew\FisrtProject.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

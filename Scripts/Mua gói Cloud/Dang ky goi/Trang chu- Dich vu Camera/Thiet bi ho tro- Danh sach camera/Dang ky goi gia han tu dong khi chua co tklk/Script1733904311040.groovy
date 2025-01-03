@@ -19,15 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Trang chu/Dich vu Camera/btn_Dich_vu_camera'), 0)
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/btn_Dich_vu_camera'), 0)
 
-Mobile.verifyElementExist(findTestObject('Trang chu/Dich vu Camera/title_thiet_bi_ho_tro'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectManTrangchu/Dich vu Camera/title_thiet_bi_ho_tro'), 0)
 
-Mobile.tap(findTestObject('Trang chu/Dich vu Camera/thiet_bi_ho_tro_chon_cam_1'), 0)
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/thiet_bi_ho_tro_chon_cam_1'), 0)
 
-ten_cam = Mobile.getText(findTestObject('Trang chu/Dich vu Camera/thiet_bi_ho_tro_chon_cam_1'), 0)
+ten_cam = Mobile.getText(findTestObject('ObjectManTrangchu/Dich vu Camera/thiet_bi_ho_tro_chon_cam_1'), 0)
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/Dich vu Cloud/dich_vu_camera_ten_camera'), ten_cam)
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_camera_ten_camera'), ten_cam)
 
 Mobile.tap(findTestObject('Dich vu Camera/btn_Dang_ky_ngay'), 0)
 

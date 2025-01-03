@@ -19,29 +19,29 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.viettel.vhome2')
 
-Mobile.tap(findTestObject('Tab Thiết bị/Tab_Thietbi'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/choncam - CNME00000586'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/choncam - CNME00000586'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/tab_tinh_nang'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/btn_chiaseTB'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_chiaseTB'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Share device/title_chia_se_thiet_bi'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi'), 0)
 
-Mobile.tap(findTestObject('Share device/chiaseTB_btn_huychiase'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/chiaseTB_btn_huychiase'), 0)
 
-Mobile.tap(findTestObject('Share device/chitietchiase_btn_huy'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/chitietchiase_btn_huy'), 0)
 
-Mobile.verifyElementText(findTestObject('Share device/popup_xac_nhan_huy_sdt0969073634'), 'Bạn có chắc muốn hủy chia sẻ đến tài khoản 0394361750')
+Mobile.verifyElementText(findTestObject('ObjectChiaSeThietBi/popup_xac_nhan_huy_sdt0969073634'), 'Bạn có chắc muốn hủy chia sẻ đến tài khoản 0394361750')
 
-Mobile.tap(findTestObject('Share device/btn_Xac_nhan_Huy'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_Xac_nhan_Huy'), 0)
 
-Mobile.verifyElementText(findTestObject('Share device/popup_thu_hoi_chia_se_tbi_X_den_tk_A'), 'Đã thu hồi lời mời chia sẻ thiết bị CNME00000586 đến tài khoản 0394361750')
+Mobile.verifyElementText(findTestObject('ObjectChiaSeThietBi/popup_thu_hoi_chia_se_tbi_X_den_tk_A'), 'Đã thu hồi lời mời chia sẻ thiết bị CNME00000586 đến tài khoản 0394361750')
 
-Mobile.verifyElementVisible(findTestObject('Share device/title_chia_se_thiet_bi'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi'), 0)
 
-Mobile.verifyElementNotExist(findTestObject('Share device/title_thiet_bi_da_chia_se_den'), 0)
+Mobile.verifyElementNotExist(findTestObject('ObjectChiaSeThietBi/title_thiet_bi_da_chia_se_den'), 0)
 
 Mobile.closeApplication()
 

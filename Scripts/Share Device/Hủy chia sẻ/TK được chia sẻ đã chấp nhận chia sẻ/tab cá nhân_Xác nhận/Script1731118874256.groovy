@@ -21,34 +21,34 @@ WebUI.callTestCase(findTestCase('Đăng nhập/Đăng nhập thành công'), [:]
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Share device/tab_ca_nhan'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/tab_ca_nhan'), 0)
 
-Mobile.tap(findTestObject('Share device/title_quanlychung'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/title_quanlychung'), 0)
 
-Mobile.tap(findTestObject('Share device/tab_quan_ly_chia_se (1)'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/tab_quan_ly_chia_se (1)'), 0)
 
-Mobile.tap(findTestObject('Share device/Huy chia se/title_Thietbidachapnhan'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/title_Thietbidachapnhan'), 0)
 
-Mobile.tap(findTestObject('Share device/Huy chia se/chon_tb_da_chap_nhan- 46674403b7b6e043'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/chon_tb_da_chap_nhan- 46674403b7b6e043'), 0)
 
-Mobile.tap(findTestObject('Share device/Huy chia se/Button_Huy_nhan_chia_se'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/Button_Huy_nhan_chia_se'), 0)
 
-Mobile.tap(findTestObject('Share device/Huy chia se/Huy_nhan_chia_se_btn Xac Nhan'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/Huy_nhan_chia_se_btn Xac Nhan'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Share device/Huy chia se/title_Ban da huy chia se tb 46674403b7b6e043 thanh cong'), 
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/Huy chia se/title_Ban da huy chia se tb 46674403b7b6e043 thanh cong'), 
     0)
 
-Mobile.verifyElementVisible(findTestObject('Share device/title Thiet_bi_da_chap_nhan'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title Thiet_bi_da_chap_nhan'), 0)
 
-Mobile.tap(findTestObject('Share device/btnBack'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
 
-Mobile.tap(findTestObject('Share device/btnBack'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
 
-Mobile.tap(findTestObject('Share device/btnBack'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/Tab_Thietbi'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.verifyElementNotExist(findTestObject('Tab Thiết bị/chon_cam - 46674403b7b6e043'), 0)
+Mobile.verifyElementNotExist(findTestObject('ObjectManThietBi/chon_cam - 46674403b7b6e043'), 0)
 
 Mobile.closeApplication()
 

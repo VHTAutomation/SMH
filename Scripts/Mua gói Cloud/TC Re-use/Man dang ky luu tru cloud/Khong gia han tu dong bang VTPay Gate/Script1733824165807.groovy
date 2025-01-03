@@ -19,25 +19,25 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementText(findTestObject('Settings Cam/Luu tru Cloud/ten_thiet_bi_dang_ky'), ten_cam)
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/ten_thiet_bi_dang_ky'), ten_cam)
 
-goi_luu_tru = Mobile.getText(findTestObject('Settings Cam/Luu tru Cloud/btn_luu_tru_su_kien_3_ngay'), 0)
+goi_luu_tru = Mobile.getText(findTestObject('ObjectCaiDat/Luu tru Cloud/btn_luu_tru_su_kien_3_ngay'), 0)
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/chon_5_phut'), 0)
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/chon_5_phut'), 0)
 
-gia_goi_cuoc = Mobile.getText(findTestObject('Settings Cam/Luu tru Cloud/Dang ky luu tru cloud/Dang_ky_cloud_gia_goi'), 0)
+gia_goi_cuoc = Mobile.getText(findTestObject('ObjectCaiDat/Luu tru Cloud/Dang ky luu tru cloud/Dang_ky_cloud_gia_goi'), 0)
 
 Mobile.scrollToText('Điều khoản Viettel Home.', FailureHandling.STOP_ON_FAILURE)
 
-btn_giahan = Mobile.getAttribute(findTestObject('Settings Cam/Luu tru Cloud/btn_gia_han_tu_dong'), 'checked', 10)
+btn_giahan = Mobile.getAttribute(findTestObject('ObjectCaiDat/Luu tru Cloud/btn_gia_han_tu_dong'), 'checked', 10)
 
 if (btn_giahan == false) {
     println('off gia han tu dong')
 }
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/chon_tk_viettelpay_gate'), 10)
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/chon_tk_viettelpay_gate'), 10)
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/btn_thanh_toan'), 0)
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/btn_thanh_toan'), 0)
 
 WebUI.callTestCase(findTestCase('Mua gói Cloud/TC Re-use/Man Viettel Pay Gate'), [:], FailureHandling.STOP_ON_FAILURE)
 
