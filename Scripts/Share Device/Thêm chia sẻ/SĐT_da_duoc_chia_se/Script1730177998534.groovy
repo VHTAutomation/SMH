@@ -19,25 +19,25 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.viettel.vhome2')
 
-Mobile.tap(findTestObject('Tab Thiết bị/Tab_Thietbi'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/choncam - CNME00000586'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/choncam - CNME00000586'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/tab_tinh_nang'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang'), 0)
 
-Mobile.tap(findTestObject('Tab Thiết bị/btn_chiaseTB'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_chiaseTB'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Share device/title_chia_se_thiet_bi'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi'), 0)
 
-Mobile.setText(findTestObject('Share device/textbox_st'), '0394361750', 0)
+Mobile.setText(findTestObject('ObjectChiaSeThietBi/textbox_st'), '0394361750', 0)
 
-Mobile.tap(findTestObject('Share device/nhap_sdt_btn_Tiep_tuc'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/nhap_sdt_btn_Tiep_tuc'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Share device/popup_tk_da_duoc_chia_se'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/popup_tk_da_duoc_chia_se'), 0)
 
-Mobile.tap(findTestObject('Share device/btn_OK_tk_da_duoc_chia_se'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_OK_tk_da_duoc_chia_se'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Share device/title_chia_se_thiet_bi'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi'), 0)
 
 Mobile.closeApplication()
 

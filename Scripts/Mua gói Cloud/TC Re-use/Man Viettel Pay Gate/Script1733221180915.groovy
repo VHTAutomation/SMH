@@ -19,29 +19,77 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('Settings Cam/Luu tru Cloud/viettelpay_gate_title_viettelpay_gate'), 0)
+<<<<<<< HEAD
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/viettelpay_gate_title_viettelpay_gate'), 0)
+=======
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDat/Luu tru Cloud/viettelpay_gate_title_viettelpay_gate'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/viettelpay_gate_chon_viettel_money'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/viettelpay_gate_chon_viettel_money'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/viettelpay_gate_chon_viettel_money'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.sendKeys(findTestObject('Settings Cam/Luu tru Cloud/viettelpay_gate_textbox_SDT'), '0366602050')
+<<<<<<< HEAD
+Mobile.sendKeys(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/viettelpay_gate_textbox_SDT'), '0366602050')
+=======
+Mobile.sendKeys(findTestObject('ObjectCaiDat/Luu tru Cloud/viettelpay_gate_textbox_SDT'), '0366602050')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.sendKeys(findTestObject('Settings Cam/Luu tru Cloud/viettelpay_gate_textbox_Mat_khau'), '123123')
+<<<<<<< HEAD
+Mobile.sendKeys(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/viettelpay_gate_textbox_Mat_khau'), '123123')
+=======
+Mobile.sendKeys(findTestObject('ObjectCaiDat/Luu tru Cloud/viettelpay_gate_textbox_Mat_khau'), '123123')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/viettelpay_gate_btn_dang_nhap'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/viettelpay_gate_btn_dang_nhap'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/viettelpay_gate_btn_dang_nhap'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.setText(findTestObject('Settings Cam/Luu tru Cloud/viettelpay_gate_nhap_otp_lan1'), '1111', 0)
+<<<<<<< HEAD
+Mobile.setText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/viettelpay_gate_nhap_otp_lan1'), '1111', 0)
+=======
+Mobile.setText(findTestObject('ObjectCaiDat/Luu tru Cloud/viettelpay_gate_nhap_otp_lan1'), '1111', 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/viettelpay_gate_nhap_otp_lan1_btn_Xac_nhan'), 15)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/viettelpay_gate_nhap_otp_lan1_btn_Xac_nhan'), 15)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/viettelpay_gate_nhap_otp_lan1_btn_Xac_nhan'), 15)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/Dang ky luu tru cloud/ViettelPay Logo'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dang ky luu tru cloud/ViettelPay Logo'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/Dang ky luu tru cloud/ViettelPay Logo'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/viettelpay_gate_btn_Thanh_toan'), 20)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/viettelpay_gate_btn_Thanh_toan'), 20)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/viettelpay_gate_btn_Thanh_toan'), 20)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.setText(findTestObject('Settings Cam/Luu tru Cloud/viettelpay_gate_nhap_otp_lan2'), '1234', 10)
+<<<<<<< HEAD
+Mobile.setText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/viettelpay_gate_nhap_otp_lan2'), '1234', 10)
+=======
+Mobile.setText(findTestObject('ObjectCaiDat/Luu tru Cloud/viettelpay_gate_nhap_otp_lan2'), '1234', 10)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/viettelpay_gate_nhap_otp_lan2_btn_Xac_nhan (1)'), 10)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/viettelpay_gate_nhap_otp_lan2_btn_Xac_nhan (1)'), 10)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/viettelpay_gate_nhap_otp_lan2_btn_Xac_nhan (1)'), 10)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/viettelpay_gate_btn_Thanh_toan'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/viettelpay_gate_btn_Thanh_toan'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/viettelpay_gate_btn_Thanh_toan'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
