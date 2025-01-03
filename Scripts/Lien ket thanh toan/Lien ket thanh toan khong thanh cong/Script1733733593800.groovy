@@ -27,11 +27,23 @@ Mobile.tap(findTestObject('Object Repository/ObjectLienKetThanhToan/obj_quan_ly_
 
 Mobile.tap(findTestObject('Object Repository/ObjectLienKetThanhToan/btn_lien_ket_ngay'), 0)
 
+<<<<<<< HEAD
 Mobile.verifyElementVisible(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_Lien_ket_tai_khoan_VTMoney'), 0)
+=======
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.sendKeys(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_Lien_ket_tai_khoan_VTMoney_textbox_SDT'), '0366602050')
+=======
+Mobile.sendKeys(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney_textbox_SDT'), '0366602050')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_Lien_ket_tai_khoan_VTMoney_btn_Tiep_tuc'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney_btn_Tiep_tuc'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.verifyElementText(findTestObject('ObjectLienKetThanhToan/text_sdt_da_duoc_lien_ket_cho_tai_khoan_khac'), 'Số điện thoại đã được liên kết cho tài khoản khác')
 

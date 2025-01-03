@@ -19,36 +19,88 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
+<<<<<<< HEAD
 Mobile.verifyElementVisible(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/title_dich_vu_cloud'), 0)
+=======
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDat/Luu tru Cloud/title_dich_vu_cloud'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/dich_vu_cloud_text_dang_su_dung'), 'Đang sử dụng')
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_text_dang_su_dung'), 'Đang sử dụng')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/dich_vu_cloud_text_tra_truoc'), 'Trả trước')
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_text_tra_truoc'), 'Trả trước')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/dich_vu_cloud_text_Viettel_money'), 'Viettel Money')
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_text_Viettel_money'), 'Viettel Money')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.verifyElementVisible(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/dich_vu_cloud_title_gia_han_tu_dong'), 0)
+=======
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_title_gia_han_tu_dong'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 dvcloud_giahan = Mobile.getAttribute(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/dich_vu_cloud_switch_btn_gia_han_tu_dong'), 
+=======
+dvcloud_giahan = Mobile.getAttribute(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_switch_btn_gia_han_tu_dong'), 
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
     'checked', 10)
 
 if (dvcloud_giahan == false) {
     println('off gia han tu dong')
 }
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/dich_vu_cloud_switch_btn_gia_han_tu_dong'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_switch_btn_gia_han_tu_dong'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.verifyElementVisible(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_chon_tai_khoan_tru_tien'), 0)
+=======
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_chon_tai_khoan_tru_tien'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_chon_tai_khoan_tru_tien_btn_lien_ket_ngay'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_chon_tai_khoan_tru_tien_btn_lien_ket_ngay'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_chon_tk_tru_tien_btn_Xac_nhan'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_chon_tk_tru_tien_btn_Xac_nhan'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.verifyElementVisible(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_Lien_ket_tai_khoan_VTMoney'), 0)
+=======
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.sendKeys(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_Lien_ket_tai_khoan_VTMoney_textbox_SDT'), '0375217287')
+=======
+Mobile.sendKeys(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney_textbox_SDT'), '0375217287')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_Lien_ket_tai_khoan_VTMoney_btn_Tiep_tuc'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney_btn_Tiep_tuc'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 WebUI.callTestCase(findTestCase('TC reuse/Man Lien ket thanh toan/Lien ket thanh toan'), [:], FailureHandling.STOP_ON_FAILURE)
 

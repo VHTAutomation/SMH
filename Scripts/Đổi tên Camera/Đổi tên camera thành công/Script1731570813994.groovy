@@ -39,7 +39,11 @@ Mobile.tap(findTestObject('Object Repository/ObjectManThietBi/btn - OK_doi_ten_c
 
 Mobile.verifyElementExist(findTestObject('Object Repository/ObjectManThietBi/title_doi_ten_cam_thanh_cong'), 0)
 
+<<<<<<< HEAD
 String reName = Mobile.getText(findTestObject('ObjectCaiDatCamera/cai_dat_ten_cam'), 0)
+=======
+String reName = Mobile.getText(findTestObject('ObjectCaiDat/cai_dat_ten_cam'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.verifyMatch(reName, 'Test@123', false)
 

@@ -29,9 +29,17 @@ Mobile.tap(findTestObject('ObjectManThietBi/btn_cai_dat'), 0)
 
 Mobile.scrollToText('Dịch vụ Camera', FailureHandling.STOP_ON_FAILURE)
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectCaiDatCamera/btn_Dich_vu_camera'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/btn_Dich_vu_camera'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/dich_vu_camera_ten_camera'), ten_cam)
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_camera_ten_camera'), ten_cam)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.tap(findTestObject('ObjectDichVuCamera/btn_Dang_ky_ngay'), 0)
 

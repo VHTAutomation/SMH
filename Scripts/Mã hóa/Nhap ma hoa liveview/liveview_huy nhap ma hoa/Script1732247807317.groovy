@@ -34,7 +34,11 @@ Mobile.tap(findTestObject('ObjectManThietBi/liveview_ma_hoa_btn_huy'), 0)
 Mobile.verifyElementText(findTestObject('ObjectManThietBi/liveview_text_video_da_duoc_ma_hoa'), 'Video đã được mã hóa')
 
 'verify trạng thái button đàm thoại'
+<<<<<<< HEAD
 String damthoai_display = Mobile.getAttribute(findTestObject('Object Repository/ObjectCaiDatCamera/liveview_btn_dam_thoai'), 'enabled', 
+=======
+String damthoai_display = Mobile.getAttribute(findTestObject('Object Repository/ObjectCaiDat/liveview_btn_dam_thoai'), 'enabled', 
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
     10)
 
 //println (damthoai_display)

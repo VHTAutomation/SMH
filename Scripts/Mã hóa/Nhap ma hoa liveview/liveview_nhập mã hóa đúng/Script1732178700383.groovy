@@ -43,7 +43,11 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/ObjectManThietBi/btn_cai_dat'), 0)
 
+<<<<<<< HEAD
 Mobile.verifyElementExist(findTestObject('ObjectCaiDatCamera/cai_dat_thong_bao'), 0)
+=======
+Mobile.verifyElementExist(findTestObject('ObjectCaiDat/cai_dat_thong_bao'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.closeApplication()
 

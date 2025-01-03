@@ -27,20 +27,44 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/ObjectManThietBi/btn_cai_dat'), 0)
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('Object Repository/ObjectCaiDatCamera/ObjectMaHoa/btn_doi_mat_khau_ma_hoa'), 0)
+=======
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/btn_doi_mat_khau_ma_hoa'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('Object Repository/ObjectCaiDatCamera/ObjectMaHoa/textbox_mat_khau_cu_ma_hoa'), 0)
+=======
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/textbox_mat_khau_cu_ma_hoa'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.sendKeys(findTestObject('Object Repository/ObjectCaiDatCamera/ObjectMaHoa/textbox_mat_khau_cu_ma_hoa (1)'), 'Test@12345')
+=======
+Mobile.sendKeys(findTestObject('Object Repository/ObjectCaiDat/ma hoa/textbox_mat_khau_cu_ma_hoa (1)'), 'Test@12345')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('Object Repository/ObjectCaiDatCamera/ObjectMaHoa/textbox_mat_khau_moi_ma_hoa'), 0)
+=======
+Mobile.tap(findTestObject('Object Repository/ObjectCaiDat/ma hoa/textbox_mat_khau_moi_ma_hoa'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.sendKeys(findTestObject('ObjectCaiDatCamera/ObjectMaHoa/textbox_mat_khau_moi_ma_hoa'), 'Test@1234')
+=======
+Mobile.sendKeys(findTestObject('ObjectCaiDat/ma hoa/textbox_mat_khau_moi_ma_hoa'), 'Test@1234')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.hideKeyboard()
 
 'verify trạng thái button xác nhận'
+<<<<<<< HEAD
 String xacnhan_display = Mobile.getAttribute(findTestObject('ObjectCaiDatCamera/ObjectMaHoa/btn_xac_nhan'), 'enable', 10)
+=======
+String xacnhan_display = Mobile.getAttribute(findTestObject('ObjectCaiDat/ma hoa/btn_xac_nhan'), 'enable', 10)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 //println (xacnhan_display)
 if (xacnhan_display == 'false') {

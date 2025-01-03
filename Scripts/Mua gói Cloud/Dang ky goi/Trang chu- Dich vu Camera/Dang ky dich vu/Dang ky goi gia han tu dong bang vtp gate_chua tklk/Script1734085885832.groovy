@@ -20,9 +20,17 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectManTrangChu/ObjectManDichVuCamera/btn_Dich_vu_camera'), 0)
+=======
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/btn_Dich_vu_camera'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectManTrangChu/ObjectManDichVuCamera/btn_dang_ky_dich_vu'), 0)
+=======
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/btn_dang_ky_dich_vu'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 // XPath tìm phần tử có text 'ABC'
 TestObject element = new TestObject('a')

@@ -27,15 +27,35 @@ Mobile.tap(findTestObject('ObjectChiaSeThietBi/title_quanlychung'), 0)
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/tab_quan_ly_chia_se (1)'), 0)
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/title_Thietbidachapnhan'), 0)
+=======
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/title_Thietbidachapnhan'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/chon_tb_da_chap_nhan- 46674403b7b6e043'), 0)
+=======
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/chon_tb_da_chap_nhan- 46674403b7b6e043'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/Button_Huy_nhan_chia_se'), 0)
+=======
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/Button_Huy_nhan_chia_se'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/Huy_nhan_chia_se_btn Huy bo'), 0)
+=======
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/Huy_nhan_chia_se_btn Huy bo'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/Button_Huy_nhan_chia_se'), 0)
+=======
+Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/Huy chia se/Button_Huy_nhan_chia_se'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
 

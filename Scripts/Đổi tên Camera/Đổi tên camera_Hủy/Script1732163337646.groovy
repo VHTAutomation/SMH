@@ -35,13 +35,25 @@ Mobile.clearText(findTestObject('Object Repository/ObjectManThietBi/edit_ten_cam
 
 Mobile.sendKeys(findTestObject('ObjectManThietBi/edit_ten_cam(1)'), ' Test@123')
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectCaiDatCamera/doi_ten_cam_btn_Huy'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/doi_ten_cam_btn_Huy'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 String tenCam = Mobile.getText(findTestObject('ObjectCaiDatCamera/cai_dat_ten_cam'), 0)
+=======
+String tenCam = Mobile.getText(findTestObject('ObjectCaiDat/cai_dat_ten_cam'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 System.out.println(tenCam)
 
+<<<<<<< HEAD
 Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/cai_dat_ten_cam'), tenCam)
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/cai_dat_ten_cam'), tenCam)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.closeApplication()
 

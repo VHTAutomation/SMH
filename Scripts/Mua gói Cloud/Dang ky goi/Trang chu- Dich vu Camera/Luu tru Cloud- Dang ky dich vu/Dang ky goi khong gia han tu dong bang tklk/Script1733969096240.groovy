@@ -20,11 +20,23 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectManTrangChu/ObjectManDichVuCamera/btn_Dich_vu_camera'), 0)
+=======
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/btn_Dich_vu_camera'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.verifyElementExist(findTestObject('ObjectManTrangChu/ObjectManDichVuCamera/title_Luu_tru_cloud'), 0)
+=======
+Mobile.verifyElementExist(findTestObject('ObjectManTrangchu/Dich vu Camera/title_Luu_tru_cloud'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectManTrangChu/ObjectManDichVuCamera/Luu_tru_cloud_btn_Xem_them'), 0)
+=======
+Mobile.tap(findTestObject('ObjectManTrangchu/Dich vu Camera/Luu_tru_cloud_btn_Xem_them'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.tap(findTestObject('ObjectDichVuCamera/luu_tru_cloud_btn_dang_ky_dich_vu'), 0)
 
@@ -51,9 +63,17 @@ Mobile.tap(findTestObject('ObjectDichVuCamera/btn_Dang_ky_ngay'), 0)
 WebUI.callTestCase(findTestCase('Mua gói Cloud/TC Re-use/Man dang ky luu tru cloud/Khong gia han tu dong bang TKLK'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
+<<<<<<< HEAD
 Mobile.verifyElementExist(findTestObject('ObjectManTrangChu/dich_vu_camera_title_Luu_tru_cloud'), 0)
+=======
+Mobile.verifyElementExist(findTestObject('ObjectManTrangchu/dich_vu_camera_title_Luu_tru_cloud'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
+<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectManTrangChu/dich_vu_camera_title_Luu_tru_cloud'), 0)
+=======
+Mobile.tap(findTestObject('ObjectManTrangchu/dich_vu_camera_title_Luu_tru_cloud'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 WebUI.callTestCase(findTestCase('Mua gói Cloud/TC Re-use/Man Dich vu Cloud/Dich vu Cloud_khi dang ky bat gia han'), [:], 
     FailureHandling.STOP_ON_FAILURE)

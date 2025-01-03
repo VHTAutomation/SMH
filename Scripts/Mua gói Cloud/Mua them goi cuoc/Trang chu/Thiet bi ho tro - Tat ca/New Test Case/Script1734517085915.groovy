@@ -37,10 +37,18 @@ println("Text trong phần tử con của ViewGroup cuối cùng là: " + ten_go
 
 
 
+<<<<<<< HEAD
 Mobile.verifyElementText(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/dich_vu_cloud_trang_thai_chua_kich_hoat'),
+=======
+Mobile.verifyElementText(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_trang_thai_chua_kich_hoat'),
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 	'Chưa kích hoạt')
 
+<<<<<<< HEAD
 Mobile.verifyElementExist(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/dich_vu_cloud_btn_mua_them_goi'), 0)
+=======
+Mobile.verifyElementExist(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/dich_vu_cloud_btn_mua_them_goi'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 WebUI.callTestCase(findTestCase('Mua gói Cloud/TC Re-use/Man Lich su mua hang - Chi tiet mua hang'), [:], FailureHandling.STOP_ON_FAILURE)
 
