@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>QLGM10_Them GM khong thanh cong do nhap space truong ten GM</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f1bcbbef-7c05-4a52-910c-4351b19843a8</testCaseGuid>
+</TestCaseEntity>

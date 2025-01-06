@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-Mobile.startExistingApplication(GlobalVariable.Environment_stg, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/Tab_Ca_Nhan'), 0)
 
@@ -76,7 +76,7 @@ TestObject bottomsheetnhomguongmat = new TestObject('bottomsheet')
 bottomsheetnhomguongmat.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView[@text=\'Người quen\']')
 
 // Kiểm tra xem nhóm "Người quen" đã được chọn hay chưa
-boolean isSelected = Mobile.verifyElementExist(nhomguongmat, 15, FailureHandling.OPTIONAL)
+boolean isSelected = Mobile.verifyElementExist(nhomguongmat,30, FailureHandling.OPTIONAL)
 
 if (!(isSelected)) {
     // Nếu chưa chọn, thực hiện tap vào nhóm gương mặt "Người nhà"

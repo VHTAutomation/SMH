@@ -6,7 +6,7 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>Biến môi trườn Product</description>
-      <initValue>'com.viettel.vhome2&amp;hl=vi'</initValue>
+      <initValue>'com.viettel.vhome2'</initValue>
       <name>Environment_pro</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -95,8 +95,8 @@
       <name>user_received_cloud_mk</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'755464c536defb73'</initValue>
+      <description>hoặc 755464c536defb73</description>
+      <initValue>'5029d1ba3223e350'</initValue>
       <name>serialcamera_AI</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
