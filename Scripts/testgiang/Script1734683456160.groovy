@@ -16,17 +16,34 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.android.AndroidDriver as AndroidDriver
+import io.appium.java_client.android.nativekey.AndroidKey as AndroidKey
+import io.appium.java_client.android.nativekey.KeyEvent as KeyEvent
+import io.appium.java_client.AppiumDriver
 
-Mobile.startExistingApplication(GlobalVariable.Environment_stg, FailureHandling.STOP_ON_FAILURE)
-Mobile.tap(findTestObject('ObjectThemGuongMat/icon_cai_dat_camera'), 0)
 
-Mobile.scrollToText('Dịch vụ camera', FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.scrollToText('Nhóm gương mặt')
+TestObject nhomguongmat = new TestObject('nhomguongmat')
 
-Mobile.tap(findTestObject('ObjectThemGuongMat/icon_xem_thong_tin_dich_vu_camera_tren_man_cai_dat'), 0)
-TestObject serviceAI = new TestObject('serviceAI')
+nhomguongmat.addProperty('xpath', ConditionType.EQUALS, '//android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[@text=\'Người quen\']')
 
-serviceAI.addProperty('xpath', ConditionType.CONTAINS, '//android.widget.TextView[contains(@text,\'Nhận diện gương mặt\')]')
+// Kiểm tra xem nhóm "Người nhà" đã được chọn hay chưa
+TestObject bottomsheetnhomguongmat = new TestObject('bottomsheet')
 
-Mobile.tap(serviceAI, 0)
+bottomsheetnhomguongmat.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView[@text=\'Người quen\']')
+boolean isSelected = Mobile.verifyElementExist(nhomguongmat,30, FailureHandling.OPTIONAL)
+
+if (!(isSelected)) {
+	// Nếu chưa chọn, thực hiện tap vào nhóm gương mặt "Người nhà"
+	println('Nhóm \'Người quen\' chưa được chọn, tiến hành tap.')
+
+	Mobile.tap(findTestObject('ObjectThemGuongMat/icon_xem_thong_tin_nhom_GM'), 0)
+
+	Mobile.tap(bottomsheetnhomguongmat, 30 )// Nếu đã chọn, ghi log và bỏ qua thao tác
+		
+} else {
+	println('Nhóm \'Người quen\' đã được chọn, bỏ qua thao tác tap.')
+}

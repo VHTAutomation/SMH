@@ -16,4 +16,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
 
+Mobile.tap(findTestObject('ObjectThemGuongMat/Tab_Ca_Nhan'), 0)
+
+Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Chung'), 0)
+
+Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Guong_Mat'), 0)
+
+Mobile.tap(findTestObject('ObjectThemGuongMat/icon_them_guong_mat_tren_man_QLGM'), 0)
+
+'Set tên gương mặt là Thu Giang'
+Mobile.setText(findTestObject('ObjectThemGuongMat/txtbox_nhap_ten_guong_mat'), 'Thu Giang', 0)
+Mobile.pressBack()
+boolean isEnabled = Mobile.verifyElementAttributeValue(findTestObject('ObjectThemGuongMat/btn_Them_tren_man_them_guong_mat'), 'enabled', 'false',
+	10, FailureHandling.CONTINUE_ON_FAILURE)
+
+if (isEnabled) {
+	println('Button đang ở trạng thái disabled.')
+} else {
+	println('Button đang ở trạng thái enable.')
+
+}
+Mobile.closeApplication()

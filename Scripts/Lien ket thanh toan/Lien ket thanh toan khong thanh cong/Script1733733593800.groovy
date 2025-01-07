@@ -19,23 +19,35 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.viettel.VTHome.dev')
 
-Mobile.tap(findTestObject('Share device/tab_ca_nhan'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/tab_ca_nhan'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Lien ket thanh toan/obj_Lien_ket_thanh_toan'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectLienKetThanhToan/obj_Lien_ket_thanh_toan'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Lien ket thanh toan/obj_quan_ly_lienLket'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectLienKetThanhToan/obj_quan_ly_lienLket'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Lien ket thanh toan/btn_lien_ket_ngay'), 0)
+Mobile.tap(findTestObject('Object Repository/ObjectLienKetThanhToan/btn_lien_ket_ngay'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Settings Cam/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney'), 0)
+<<<<<<< HEAD
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_Lien_ket_tai_khoan_VTMoney'), 0)
+=======
+Mobile.verifyElementVisible(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.sendKeys(findTestObject('Settings Cam/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney_textbox_SDT'), '0366602050')
+<<<<<<< HEAD
+Mobile.sendKeys(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_Lien_ket_tai_khoan_VTMoney_textbox_SDT'), '0366602050')
+=======
+Mobile.sendKeys(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney_textbox_SDT'), '0366602050')
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('Settings Cam/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney_btn_Tiep_tuc'), 0)
+<<<<<<< HEAD
+Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/popup_Lien_ket_tai_khoan_VTMoney_btn_Tiep_tuc'), 0)
+=======
+Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/popup_Lien_ket_tai_khoan_VTMoney_btn_Tiep_tuc'), 0)
+>>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.verifyElementText(findTestObject('Lien ket thanh toan/text_sdt_da_duoc_lien_ket_cho_tai_khoan_khac'), 'Số điện thoại đã được liên kết cho tài khoản khác')
+Mobile.verifyElementText(findTestObject('ObjectLienKetThanhToan/text_sdt_da_duoc_lien_ket_cho_tai_khoan_khac'), 'Số điện thoại đã được liên kết cho tài khoản khác')
 
-Mobile.tap(findTestObject('Lien ket thanh toan/popup_loi_btn_OK'), 0)
+Mobile.tap(findTestObject('ObjectLienKetThanhToan/popup_loi_btn_OK'), 0)
 
-Mobile.verifyElementExist(findTestObject('Lien ket thanh toan/btn_lien_ket_ngay'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectLienKetThanhToan/btn_lien_ket_ngay'), 0)
 
