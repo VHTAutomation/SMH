@@ -23,7 +23,7 @@ import io.appium.java_client.TouchAction as TouchAction
 import io.appium.java_client.touch.TapOptions as TapOptions
 import io.appium.java_client.touch.offset.PointOption as PointOption
 
-Mobile.startExistingApplication(GlobalVariable.Environment_stg, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/txt_Dich_vu_Camera'), 0)
 
