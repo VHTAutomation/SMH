@@ -26,40 +26,31 @@ Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Chung'), 0)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Guong_Mat'), 0)
 
-Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_guong_mat_tren_man_QLGM'), 0)
+Mobile.tap(findTestObject('ObjectThemGuongMat/icon_them_guong_mat_tren_man_QLGM'), 0)
 
 'Set tên gương mặt là Thu Giang'
-Mobile.setText(findTestObject('ObjectThemGuongMat/txtbox_nhap_ten_guong_mat'), 'Thu Giang', 0)
+Mobile.setText(findTestObject('ObjectThemGuongMat/txtbox_nhap_ten_guong_mat'), 'Phí Giang', 0)
 
-'Số ảnh muốn chọn'
-int numberOfImages = 3
+TestObject plusButton = new TestObject('plus_button')
 
-for (int i = 1; i <= numberOfImages; i++) {
-    //TestObject daucong= new TestObject('daucong' + i)
-    //daucong.addProperty ('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView[1]/android.view.ViewGroup[' + i + ']/android.widget.ImageView[1]')
-    // Nhấn vào ảnh để chọn
-    //Mobile.tap(daucong, 30)
-    TestObject plusButton = new TestObject('plus_button')
+plusButton.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView[1]/*[last()]/android.widget.ImageView[1]')
 
-    plusButton.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView[1]/*[last()]/android.widget.ImageView[1]')
+'Nhấn vào dấu + để thực hiện thêm ảnh'
+Mobile.tap(plusButton, 30)
 
-    'Nhấn vào dấu + để thực hiện thêm ảnh'
-    Mobile.tap(plusButton, 30)
+'Chọn ảnh từ bộ sưu tập'
+Mobile.tap(findTestObject('ObjectThemGuongMat/menu_chon_anh_tu_bo_suu_tap'), 0)
 
-    'Chọn ảnh từ bộ sưu tập'
-    Mobile.tap(findTestObject('ObjectThemGuongMat/menu_chon_anh_tu_bo_suu_tap'), 0)
+// Tạo TestObject động với XPath rút gọn
+TestObject image = new TestObject('DynamicImage')
 
-    // Tạo TestObject động với XPath rút gọn
-    TestObject image = new TestObject('DynamicImage' + i)
+image.addProperty('xpath', ConditionType.EQUALS, '//android.widget.GridView/android.widget.FrameLayout[1]//android.widget.ImageView')
 
-    image.addProperty('xpath', ConditionType.EQUALS, '//android.widget.GridView/android.widget.FrameLayout[' + i + ']//android.widget.ImageView')
+'Nhấn vào ảnh chọn'
+Mobile.tap(image, 30)
 
-    'Nhấn vào ảnh chọn'
-    Mobile.tap(image, 30)
-
-    'Nhấn button thêm ảnh trên màn thay đổi kích thước ảnh'
-    Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_anh_tren_man_thay_doi_kich_thuoc_anh'), 30)
-}
+'Nhấn button thêm ảnh trên màn thay đổi kích thước ảnh'
+Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_anh_tren_man_thay_doi_kich_thuoc_anh'), 30)
 
 TestObject nhomguongmat = new TestObject('nhomguongmat')
 
@@ -85,36 +76,34 @@ if (!(isSelected)) {
     println('Nhóm \'Người nhà\' đã được chọn, bỏ qua thao tác tap.')
 }
 
-'Nhấn button thêm gương mặt trên màn thêm gương mặt'
-Mobile.tap(findTestObject('ObjectThemGuongMat/btn_Them_tren_man_them_guong_mat'), 0)
+Mobile.tap(findTestObject('ObjectThemGuongMat/icon_back'), 0)
 
+Mobile.verifyElementVisible(findTestObject('ObjectThemGuongMat/popup_khi_nhan_icon_back_image'), 0)
+
+Mobile.verifyElementVisible(findTestObject('ObjectThemGuongMat/popup_khi_nhan_icon_back-content'), 0)
+
+Mobile.verifyElementVisible(findTestObject('ObjectThemGuongMat/popup_khi_nhan_icon_back_btn_Huy'), 0)
+
+Mobile.verifyElementVisible(findTestObject('ObjectThemGuongMat/popup_khi_nhan_icon_back_btn_Xac_nhan'), 0)
+
+Mobile.tap(findTestObject('ObjectThemGuongMat/popup_khi_nhan_icon_back_btn_Xac_nhan'), 0)
 TestObject groupNguoiNha = findTestObject('ObjectThemGuongMat/txt_Nhom_guong_mat_Nguoi_Nha')
 
 TestObject face = new TestObject('face')
 
-face.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup//android.widget.TextView[@text=\'Thu Giang\']')
+face.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup//android.widget.TextView[@text=\'Phí Giang\']')
 
 // Kiểm tra sự tồn tại của nhóm "Người nhà"
 if (Mobile.waitForElementPresent(groupNguoiNha, 15, FailureHandling.CONTINUE_ON_FAILURE)) {
-    println('Nhóm \'Người nhà\' tồn tại.')
+	println('Nhóm \'Người nhà\' tồn tại.')
 
-    // Kiểm tra sự tồn tại của "Thu Giang" trong nhóm "Người nhà"
-    if (Mobile.waitForElementPresent(face, 10, FailureHandling.CONTINUE_ON_FAILURE)) {
-        println('Gương mặt \'Thu Giang\' tồn tại trong nhóm \'Người nhà\'.')
-    } else {
-        println('Gương mặt \'Thu Giang\' không tồn tại trong nhóm \'Người nhà\'.')
-    }
+	// Kiểm tra sự tồn tại của "Thu Giang" trong nhóm "Người nhà"
+	if (Mobile.waitForElementPresent(face, 10, FailureHandling.CONTINUE_ON_FAILURE)) {
+		println('Gương mặt \'Phí Giang\' tồn tại trong nhóm \'Người nhà\'.')
+	} else {
+		println('Gương mặt \'Phí Giang\' không tồn tại trong nhóm \'Người nhà\'.')
+	}
 } else {
-    println('Nhóm \'Người nhà\' không tồn tại.')
+	println('Nhóm \'Người nhà\' không tồn tại.')
 }
-
-Mobile.tap(face, 0)
-
-Mobile.verifyElementText(findTestObject('ObjectThemGuongMat/txtbox_ten_guong_mat_tren_man_thong_tin_GM'), 'Thu Giang')
-
-Mobile.verifyElementText(findTestObject('ObjectThemGuongMat/txt_so_luong_anh_tai_len'), ('Tải lên: ' + numberOfImages) +'/15')
-
-Mobile.verifyElementText(nhomguongmat, 'Người nhà')
-
 Mobile.closeApplication()
-

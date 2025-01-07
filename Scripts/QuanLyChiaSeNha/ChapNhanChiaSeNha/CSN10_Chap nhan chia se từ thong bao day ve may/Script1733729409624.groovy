@@ -28,8 +28,13 @@ import io.appium.java_client.AppiumDriver
 Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
 
 
-/*'Mở thanh thông báo trên thiết bị Android'
+/*C1: Mở thanh thông báo trên thiết bị Android'
 MobileDriverFactory.getDriver().pressKey(new KeyEvent(AndroidKey.NOTIFICATION))*/
+/*C2: dùng cho katalon v10 bỏ import thư viện của AndroidElement
+ AppiumDriver driver = MobileDriverFactory.getDriver()
+ 
+ ((AndroidDriver) driver).openNotifications()
+  */
 // Lấy đối tượng driver hiện tại
 AppiumDriver<?> driver = MobileDriverFactory.getDriver()
 
