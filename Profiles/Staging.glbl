@@ -41,8 +41,23 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'Test 123'</initValue>
+      <name>username_register</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'123456aB@'</initValue>
       <name>password_register</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0983391316'</initValue>
+      <name>phone_register</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'102030405060'</initValue>
+      <name>cccd_register</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Nhà được chia sẻ với quyền Admin</description>
