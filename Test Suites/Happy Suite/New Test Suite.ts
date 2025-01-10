@@ -333,4 +333,95 @@
       <testCaseId>Test Cases/Mã hóa/Doi mat khau ma hoa/doi mat khau thanh cong</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>cb6f88ed-417a-4729-93fa-491fd56e79f6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Lien ket thanh toan/Lien ket thanh toan thanh cong</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>91d47d4c-0884-4d42-906d-43c025b5d0c8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mua gói Cloud/Dang ky goi/Trang chu- Dich vu Camera/Dang ky dich vu/Dang ky goi gia han tu dong khi da co tklk</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1f00a5fa-26b4-4f83-9dfb-c2c72697d504</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mua gói Cloud/Dang ky goi/Trang chu- Dich vu Camera/Dang ky dich vu/Dang ky goi gia han tu dong bang vtp gate_co tklk</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d5069b8b-f1bf-4aac-933c-ad7e696a7917</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Mua gói Cloud/Mua them goi cuoc/Trang chu/Dang ky dich vu/Mua them goi thanh cong bang tk viettelpay gate</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ed597b28-ac81-4496-b2f8-d9585a0c7423</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TangGoiCloud/TGC1_Tang goi Cloud thanh cong</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e7836e46-9308-4508-9347-a4434f717e03</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/QuanLyTaiKhoan/dang xuat thanh cong</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>82737e06-fce0-4b27-911b-8ca18a96f2d9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/QuanLyTaiKhoan/DangNhap/QLTK1_dang nhap thanh cong</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1b84243e-f1dc-45fe-9803-3bc1317d03eb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ThemGuongMat/QLGM5_Them guong mat thanh cong tu cai dat camera</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>444e159c-713f-40a5-be67-32824416fbac</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/QuanLyGuongMat/SuaGuongMat/QLGM13_cap nhat guong mat tu tab ca nhan</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>39492a67-fece-4ca1-ad15-c52d32167155</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/QuanLyGuongMat/XoaGuongMat/QLGM31_xoa guong mat tu dich vu camera trang chu</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>779e1e85-529c-4568-9fa9-603e4a6dfc4b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/QuanLyNguCanh/NguCanhTab/ThemNguCanhTaiTabNguCanh/QLNC16_them tu tab ngu canh lua chon NEU trang thai thiet bi thay doi</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>477cee05-8272-47fe-bc07-7a2c05a68d4e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/QuanLyNguCanh/SuaNguCanh/QLNC27_cap_nhat_ten_ngu_canh_tu_dong_thanh_cong</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2c154887-1c58-466e-ab26-311ea4dca3f1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/QuanLyNguCanh/XoaNguCanh/QLNC33_xoa_ngu_canh_tu_dong</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
