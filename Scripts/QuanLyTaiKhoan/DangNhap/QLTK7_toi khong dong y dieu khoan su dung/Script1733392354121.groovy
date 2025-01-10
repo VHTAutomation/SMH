@@ -25,7 +25,7 @@ Mobile.scrollToText('Thông tin về chủ sở hữu', FailureHandling.STOP_ON_
 
 Mobile.tap(findTestObject('ObjectDangNhap/ObjectManDieuKhoanSuDung/btn_toi_khong_dong_y'), 0)
 
-Mobile.verifyElementText(findTestObject('ObjectDangNhap/btn_dang_nhap'), 'ĐĂNG NHẬP')
+Mobile.verifyElementText(findTestObject('ObjectDangNhap/btn_dang_nhap (1)'), 'ĐĂNG NHẬP')
 
 Mobile.closeApplication()
 
