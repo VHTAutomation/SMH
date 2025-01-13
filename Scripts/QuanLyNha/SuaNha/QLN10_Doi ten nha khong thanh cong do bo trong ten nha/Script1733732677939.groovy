@@ -24,14 +24,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import org.openqa.selenium.By as By
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-def tapDynamicObject(String xpath, int timeout) {
-	TestObject dynamicObject = new TestObject('dynamicObject')
 
-	dynamicObject.addProperty('xpath', ConditionType.EQUALS, xpath)
-
-	Mobile.tap(dynamicObject, 0)
-}
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 //Mobile.tap(findTestObject('null'), 0)
 tapDynamicObject('//android.widget.TextView[1]', 0)
@@ -47,6 +41,7 @@ Mobile.setText(findTestObject('ObjectSuaNha/txtbox_Nha_Giang_Xih'), '', 0)
 Mobile.tap(findTestObject('ObjectSuaNha/btn_Luu_tren_man_Doi_ ten_nha'), 0)
 
 AndroidDriver<?> driver = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>)
+
 String expectedPartialMessage = GlobalVariable.toasttennhatrong // Nội dung toast hiển thị
 
 //Khối try-catch giúp quản lý lỗi trong quá trình kiểm tra. Nếu không tìm thấy Toast,
@@ -64,16 +59,24 @@ String expectedPartialMessage = GlobalVariable.toasttennhatrong // Nội dung to
 catch (NoSuchElementException e) {
     println('Toast message không xuất hiện hoặc không tìm thấy XPath.')
 } */
-    WebDriverWait wait = new WebDriverWait(driver, 15)
+WebDriverWait wait = new WebDriverWait(driver, 15)
 
-	AndroidElement toastElement = driver.findElementByXPath('//android.widget.Toast[1]')
+AndroidElement toastElement = driver.findElementByXPath('//android.widget.Toast[1]')
+
 if (toastElement.getText().equals(expectedPartialMessage)) {
-	println("Toast message chứa nội dung mong đợi.");
+    println('Toast message chứa nội dung mong đợi.') // Có thể thêm logic xử lý lỗi hoặc tiếp tục chương trình
 } else {
-	println("Toast message chứa nội dung không mong đợi.");
-	// Có thể thêm logic xử lý lỗi hoặc tiếp tục chương trình
+    println('Toast message chứa nội dung không mong đợi.')
 }
 
 // Đóng ứng dụng
 Mobile.closeApplication()
+
+def tapDynamicObject(String xpath, int timeout) {
+    TestObject dynamicObject = new TestObject('dynamicObject')
+
+    dynamicObject.addProperty('xpath', ConditionType.EQUALS, xpath)
+
+    Mobile.tap(dynamicObject, 0)
+}
 

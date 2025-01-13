@@ -23,7 +23,7 @@ Mobile.tap(findTestObject('ObjectManHinhChinh/title_ca_nhan'), 0)
 
 Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManCaNhan/title_quan_ly_chung'), 0)
 
-Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManCaNhan/ObjectManQuanLyChung/title_tai_khoan_va_bao_mat'), 0)
+Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManCaNhan/ObjectManQuanLyChung/icon_tai_khoan_va_bao_mat'), 0)
 
 Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManCaNhan/ObjectManQuanLyChung/ObjectManTaiKhoanVaBaoMat/title_doi_mat_khau'), 
     0)
