@@ -26,7 +26,7 @@ Mobile.tap(findTestObject('ObjectXoaNha/Menu_Quan_Ly_Chung'), 0)
 
 Mobile.tap(findTestObject('ObjectXoaNha/Menu_Quan_Ly_Nha'), 0)
 
-String house_delete = "$GlobalVariable.housename_canhan_Update"
+String house_delete = "$GlobalVariable.housename_canhan" + '_Update'
 
 TestObject houseItem = new TestObject('houseItem')
 
@@ -41,11 +41,11 @@ Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confrim_xoa_image
 
 Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confrim_xoa_noi dung'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confrim_xoa_btn_Huy_bo'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confirm_xoa_btn_huy_bo'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confrim_xoa_btn_Xoa'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confirm_xoa_btn_xoa'), 0)
 
-Mobile.tap(findTestObject('ObjectXoaNha/popup_confrim_xoa_btn_Xoa'), 0)
+Mobile.tap(findTestObject('ObjectXoaNha/popup_confirm_xoa_btn_xoa'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 

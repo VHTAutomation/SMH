@@ -24,6 +24,8 @@ tapDynamicObject('//android.widget.TextView[1]', 0)
 
 Mobile.tap(findTestObject('ObjectThemNha/popup_chon _nha_Quan_Ly_Nha'), 0)
 
+Mobile.scrollToText('Thêm nhà', FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('ObjectThemNha/btn_them_nha_tren_man_quan_ly_nha'), 0)
 
 Mobile.setText(findTestObject('ObjectThemNha/txtbox_nhap_ten_nha'), 'auto_trang_chu', 0)

@@ -36,7 +36,7 @@ Mobile.tap(findTestObject('ObjectSuaNha/txt_Nha_Giang_xih_tren_man_quan_ly_nha')
 Mobile.tap(findTestObject('ObjectSuaNha/Menu_doi_ten_nha_tren_man_quan_ly_nha'), 0)
 
 //Mobile.tap(findTestObject('ObjectSuaNha/icon_xoa_tren_popup_do_ ten _nha'), 0)
-Mobile.setText(findTestObject('ObjectSuaNha/txtbox_Nha_Giang_Xih'), 'Test', 0)
+Mobile.setText(findTestObject('ObjectSuaNha/txtbox_Nha_Giang_Xih'), 'Nhà Giang xih', 0)
 
 Mobile.tap(findTestObject('ObjectSuaNha/btn_Luu_tren_man_Doi_ ten_nha'), 0)
 
@@ -65,7 +65,8 @@ WebDriverWait wait = new WebDriverWait(driver, 15)
 AndroidElement toastElement = driver.findElementByXPath('//android.widget.Toast[1]')
 
 if (toastElement.getText().equals(expectedPartialMessage)) {
-    println('Toast message chứa nội dung mong đợi.') // Có thể thêm logic xử lý lỗi hoặc tiếp tục chương trình
+    println('Toast message chứa nội dung mong đợi.' // Có thể thêm logic xử lý lỗi hoặc tiếp tục chương trình
+        )
 } else {
     println('Toast message chứa nội dung không mong đợi.')
 }

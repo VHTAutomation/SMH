@@ -26,6 +26,8 @@ Mobile.tap(findTestObject('Object Repository/ObjectThemNha/Menu_Quan_Ly_Chung'),
 
 Mobile.tap(findTestObject('Object Repository/ObjectThemNha/Mennu_Quan_Ly_Nha'), 0)
 
+Mobile.scrollToText('Thêm nhà', FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Object Repository/ObjectThemNha/btn_them_nha_tren_man_quan_ly_nha'), 0)
 
 Mobile.setText(findTestObject('Object Repository/ObjectThemNha/txtbox_nhap_ten_nha'), 'auto_ca_nhan', 0)

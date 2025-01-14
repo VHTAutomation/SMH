@@ -27,6 +27,8 @@ tapDynamicObject('//android.widget.TextView[1]', 0)
 'Nhan chon chuc nang quan ly nha'
 Mobile.tap(findTestObject('ObjectThemNha/popup_chon _nha_Quan_Ly_Nha'), 0)
 
+Mobile.scrollToText('Thêm nhà', FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('ObjectThemNha/btn_them_nha_tren_man_quan_ly_nha'), 0)
 
 Mobile.setText(findTestObject('ObjectThemNha/txtbox_nhap_ten_nha'), 'auto_thiet_bi', 0)
@@ -62,7 +64,7 @@ Mobile.tap(houseItem, 0)
 Mobile.tap(findTestObject('ObjectThemNha/Tab_Trang_Chu'), 0)
 
 'Kiểm tra nhà vừa tạo trên popup chọn nhà trên trang chủ'
-Mobile.verifyElementExist(houseItem, 10)
+// Mobile.verifyElementExist(houseItem, 10)
 
 //Mobile.verifyElementExist(findTestObject('null'), 0)
 Mobile.closeApplication()

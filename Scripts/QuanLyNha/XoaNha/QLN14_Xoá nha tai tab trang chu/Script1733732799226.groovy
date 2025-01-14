@@ -47,14 +47,14 @@ Mobile.tap(findTestObject('ObjectXoaNha/popup_confirm_xoa_btn_xoa'), 0)
 Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 'Kiểm tra nhà vừa xoá trên màn quản lý nhà'
-Mobile.verifyElementNotVisible(houseItem, 0)
+Mobile.verifyElementNotExist(houseItem, 0)
 
 Mobile.tap(findTestObject('ObjectXoaNha/icon_back'), 0)
 
 tapDynamicObject('//android.widget.TextView[1]', 0)
 
 'Kiểm tra nhà vừa xoá trên trang chủ'
-Mobile.verifyElementNotVisible(houseItem, 0)
+Mobile.verifyElementNotExist(houseItem, 0)
 
 'Nhan ra ngoai man thong bao chon nha'
 Mobile.tap(findTestObject('ObjectXoaNha/NhanRaNgoaiBottomSheet'), 0)
@@ -64,7 +64,7 @@ Mobile.tap(findTestObject('ObjectXoaNha/Tab_Thiet_Bi'), 0)
 tapDynamicObject('//android.widget.TextView[1]', 0)
 
 'Kiểm tra nhà vừa xoá trên tab thiết bị'
-Mobile.verifyElementNotVisible(houseItem, 0)
+Mobile.verifyElementNotExist(houseItem, 0)
 
 Mobile.tap(findTestObject('ObjectXoaNha/NhanRaNgoaiBottomSheet'), 0)
 
