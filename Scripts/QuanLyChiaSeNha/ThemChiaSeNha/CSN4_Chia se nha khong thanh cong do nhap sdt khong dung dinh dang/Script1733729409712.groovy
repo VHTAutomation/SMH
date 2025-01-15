@@ -24,7 +24,7 @@ import org.openqa.selenium.NoSuchElementException as NoSuchElementException
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectChiaSeNha/Tab_Ca_Nhan'), 0)
 
@@ -34,12 +34,10 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Quan_Ly_Nha'), 0)
 
 // Sử dụng XPath để chọn phần tử trong RecyclerView tại vị trí thứ 1
 TestObject houseObject = new TestObject()
-houseObject.addProperty(
-	'xpath',
-	ConditionType.EQUALS,
-	"//androidx.recyclerview.widget.RecyclerView[1]//android.view.ViewGroup[1]//android.widget.TextView[1]"
-)
-Mobile.tap(houseObject,0)
+
+houseObject.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView[1]//android.view.ViewGroup[1]//android.widget.TextView[1]')
+
+Mobile.tap(houseObject, 0)
 
 Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Chia_se_nha'), 0)
 
@@ -85,7 +83,7 @@ try {
 }
 catch (NoSuchElementException e) {
     println('Toast message không xuất hiện hoặc không tìm thấy XPath.')
-
 } 
 
 Mobile.closeApplication()
+
