@@ -35,7 +35,7 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Quan_Ly_Nha'), 0)
 // Sử dụng XPath để chọn phần tử trong RecyclerView tại vị trí thứ 1
 TestObject houseObject = new TestObject()
 
-houseObject.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView[1]//android.view.ViewGroup[1]//android.widget.TextView[1]')
+houseObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$GlobalVariable.houseNameShared_Admin')]")
 
 Mobile.tap(houseObject, 0)
 

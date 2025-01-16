@@ -24,7 +24,7 @@ import org.openqa.selenium.NoSuchElementException as NoSuchElementException
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectChiaSeNha/Tab_Ca_Nhan'), 0)
 
@@ -34,7 +34,7 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Quan_Ly_Nha'), 0)
 
 TestObject houseObject = new TestObject('houseObject')
 
-houseObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$GlobalVariable.houseNameShared_Member')]")
+houseObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$GlobalVariable.houseNameShared_Admin')]")
 
 'Nhấn vào nhà My Home'
 Mobile.tap(houseObject, 0 // tap vào Nhà được chia sẻ:" Nhà Chia Sẻ"
@@ -44,7 +44,8 @@ Mobile.tap(houseObject, 0 // tap vào Nhà được chia sẻ:" Nhà Chia Sẻ"
 Mobile.tap(findTestObject('ObjectChiaSeNha/btn_roi_nha'), 0)
 
 'Kiểm tra popup xác nhận rời nhà'
-Mobile.verifyElementVisible(findTestObject('ObjectChiaSeNha/popup_thong_bao_roi-nha_txtfield_ban_co_chac_muon_roi_nha'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeNha/popup_thong_bao_roi-nha_txtfield_ban_co_chac_muon_roi_nha'), 
+    0)
 
 Mobile.verifyElementVisible(findTestObject('ObjectChiaSeNha/popup_thong_bao_roi_nha_btn_huy_bo'), 0)
 
@@ -54,18 +55,18 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/popup_thong_bao_roi_nha_btn_huy_bo'),
 
 TestObject peopleObject = new TestObject('peopleObject')
 
-peopleObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.Bietdanh_Member'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared']and .//android.widget.TextView[@text='Thành viên']]")
+peopleObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.Bietdanh_Admin'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared']and .//android.widget.TextView[@text='Quản trị viên']]")
 
 'Kiểm tra tồn tại thành viên sau khi nhấn huỷ trong mục Danh sách thành viên trong nhà được chia sẻ'
 Mobile.verifyElementExist(peopleObject, 10 // timeout 10s
     )
 
-Mobile.tap(findTestObject('ObjectChiaSeNha/icon_back'), 0)
+Mobile.tap(findTestObject('ObjectSuaNha/icon_back_man_quan_ly_nha'), 0)
 
 'Kiểm tra sự tồn tại của nhà được chia sẻ trên màn quản lý nhà chứa danh sách nhà của tài khoản'
 TestObject houseItem = new TestObject('houseItem')
 
-houseItem.addProperty('xpath', ConditionType.EQUALS, "//android.widget.TextView[contains(@text, '$GlobalVariable.houseNameShared_Member')]")
+houseItem.addProperty('xpath', ConditionType.EQUALS, "//android.widget.TextView[contains(@text, '$GlobalVariable.houseNameShared_Admin')]")
 
 Mobile.verifyElementExist(houseItem, 20)
 
@@ -79,7 +80,7 @@ tapDynamicObject('//android.widget.TextView[1]', 0)
 
 TestObject houseObject_home = new TestObject()
 
-houseObject_home.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//androidx.appcompat.widget.LinearLayoutCompat[ .//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Member'] and .//android.widget.ImageView]")
+houseObject_home.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//androidx.appcompat.widget.LinearLayoutCompat[ .//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Admin'] and .//android.widget.ImageView]")
 
 'Kiểm tra tồn tại của nhà được chia sẻ trên popup chọn nhà trên trang chủ'
 Mobile.verifyElementExist(houseObject_home, 10 // timeout 10s

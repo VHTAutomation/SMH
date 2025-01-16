@@ -85,6 +85,11 @@
       <name>Bietdanh_Member</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Thu Giang'</initValue>
+      <name>Bietdanh_Admin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>Tài khoản test thẻ yêu thích</description>
       <initValue>'0394361750'</initValue>
       <name>user_the_yeu_thich</name>
