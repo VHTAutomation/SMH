@@ -24,7 +24,7 @@ import org.openqa.selenium.NoSuchElementException as NoSuchElementException
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 tapDynamicObject('//android.widget.TextView[1]', 0)
 
@@ -68,7 +68,7 @@ catch (NoSuchElementException e) {
 Mobile.verifyElementNotExist(peopleObject, 10 // timeout 10s
     )
 
-Mobile.tap(findTestObject('ObjectChiaSeNha/icon_back'), 0)
+Mobile.tap(findTestObject('ObjectSuaNha/icon_back_man_quan_ly_nha'), 0)
 
 Mobile.tap(findTestObject('ObjectChiaSeNha/icon_back'), 0)
 
@@ -87,8 +87,8 @@ TestObject houseObject_home = new TestObject()
 houseObject_home.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//androidx.appcompat.widget.LinearLayoutCompat[ .//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Admin']]")
 
 'Kiểm tra việc tồn tại của nhà được chia sẻ trên popup chọn nhà trên tab trang chủ'
-Mobile.verifyElementNotExist(houseObject_home, 20) // timeout 10s
-   
+Mobile.verifyElementNotExist(houseObject_home, 20 // timeout 10s
+    )
 
 Mobile.tap(findTestObject('ObjectChiaSeNha/NhanRaNgoaiBottomSheet'), 0)
 

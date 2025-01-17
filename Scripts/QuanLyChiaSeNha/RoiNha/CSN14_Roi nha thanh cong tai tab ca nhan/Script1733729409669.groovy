@@ -121,7 +121,7 @@ Mobile.tap(houseObject, 0)
 
 TestObject peopleObject = new TestObject('peopleObject')
 
-peopleObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.Bietdanh_Admin' + '_Update'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared']]")
+peopleObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.Bietdanh_Admin'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared']]")
 
 // Kiểm tra sự tồn tại
 Mobile.verifyElementNotExist(peopleObject, 10 // timeout 10s
