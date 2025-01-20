@@ -83,7 +83,7 @@ catch (NoSuchElementException e) {
 // Tạo đối tượng động với XPath thành viên trong danh sách
 TestObject peopleObject_update = new TestObject()
 
-peopleObject_update.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$updatedBietdanhMember'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared'] and .//android.widget.TextView[@text='Chưa xác nhận']]")
+peopleObject_update.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$updatedBietdanhMember'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared'] and .//android.widget.TextView[@text='Quản trị viên']]")
 
 'Kiểm tra thành viên sau khi update tên biệt danh và quyền'
 Mobile.verifyElementExist(peopleObject_update, 10 // timeout 10s

@@ -68,6 +68,8 @@ TestObject houseItem = new TestObject('houseItem')
 
 houseItem.addProperty('xpath', ConditionType.EQUALS, "//android.widget.TextView[contains(@text, '$GlobalVariable.houseNameShared_Admin')]")
 
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.verifyElementExist(houseItem, 20)
 
 Mobile.tap(findTestObject('ObjectChiaSeNha/icon_back'), 0)
