@@ -21,9 +21,9 @@ Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FA
 
 Mobile.tap(findTestObject('Object Repository/ObjectChiaSeThietBi/tab_ca_nhan'), 0)
 
-Mobile.tap(findTestObject('Object Repository/ObjectChiaSeThietBi/title_quanlychung'), 0)
+Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManCaNhan/title_quan_ly_chung'), 0)
 
-Mobile.tap(findTestObject('Object Repository/ObjectChiaSeThietBi/tab_quan_ly_chia_se (1)'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/title_quan_ly_chia_se'), 0)
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_Them_chia_se'), 0)
 
@@ -33,35 +33,25 @@ Mobile.tap(findTestObject('ObjectChiaSeThietBi/android.widget.TextView - CNME000
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/chon_thietbi_btn_Tiep_tuc'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi (1)'), 0)
 
-Mobile.setText(findTestObject('ObjectChiaSeThietBi/textbox_st'), GlobalVariable.user_share, 0)
+Mobile.setText(findTestObject('ObjectChiaSeThietBi/txtbox_nhap_so_dien_thoai'), GlobalVariable.user_shared, 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/nhap_sdt_btn_Tiep_tuc'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_tiep_tuc_muc_nhap_so_dien_thoai'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/chon_quyen_xem_lai'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/chkbox_quyen_xem_lai'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_Chia_se'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_hoan_thanh_thiet_lap_quyen'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/popup_guichiasethanhcong'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/popup_gui_loi_moi_chia_se_thanh_cong'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_QunaLychiase'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_man_quan_ly_chia_se'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/title_thiet_bi_da_chia_se'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/title_thiet_bi_da_chia_se (1)'), 0)
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/thiet_bi_da_chia_se- CNME00000586'), 0)
 
-Mobile.verifyElementText(findTestObject('ObjectChiaSeThietBi/sdtdachiase- 0394361750'), GlobalVariable.user_share)
+Mobile.verifyElementText(findTestObject('ObjectChiaSeThietBi/sdtdachiase- 0394361750'), GlobalVariable.user_shared)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
-
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
-
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
-
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
-
-Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/tab_ca_nhan'), 0)
-
-WebUI.callTestCase(findTestCase('Đăng xuất/Đăng xuất thành công'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.closeApplication()
 

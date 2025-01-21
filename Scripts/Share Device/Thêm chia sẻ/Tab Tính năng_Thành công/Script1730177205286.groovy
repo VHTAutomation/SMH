@@ -21,19 +21,13 @@ Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FA
 
 Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-<<<<<<< HEAD
+
 Mobile.tap(findTestObject('ObjectManThietBi/opt_chon_cam'), 0)
-=======
-Mobile.tap(findTestObject('ObjectManThietBi/chon_cam - 46674403b7b6e043'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang'), 0)
 
-<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi'), 0)
-=======
-Mobile.tap(findTestObject('ObjectManThietBi/btn_chiaseTB'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
+
 
 Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi'), 0)
 
@@ -47,23 +41,12 @@ Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_hoan_thanh'), 0)
 
 Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/popup_guichiasethanhcong'), 0)
 
-<<<<<<< HEAD
 Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi'), 0)
-=======
-Mobile.tap(findTestObject('ObjectManThietBi/btn_chiaseTB'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 Mobile.verifyElementVisible(findTestObject('ObjectManThietBi/title_chiaseTBden'), 0)
 
 Mobile.verifyElementText(findTestObject('ObjectManThietBi/chia se TB den_sdt chia se'), GlobalVariable.user_share)
 
-<<<<<<< HEAD
 Mobile.closeApplication()
-=======
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
-
-WebUI.callTestCase(findTestCase('Đăng xuất/Đăng xuất thành công'), [:], FailureHandling.STOP_ON_FAILURE)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
