@@ -148,7 +148,7 @@
       <guid>4e44cff1-66c6-4749-963d-d674c2b6d0a1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Thêm chia sẻ/Tab Tính năng_Thành công</testCaseId>
+      <testCaseId>Test Cases/Share Device/Thêm chia sẻ/CSTB1_chia se thiet bi thanh cong tu tab tinh nang cua Live view</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -218,7 +218,7 @@
       <guid>beb00f0b-171d-4ef0-8daf-19a42a480c6b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Thêm chia sẻ/Tab Cá nhân_Thành công</testCaseId>
+      <testCaseId>Test Cases/Share Device/Thêm chia sẻ/CSTB2_chia se thiet bi thanh cong tu tab ca nhan</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -260,7 +260,7 @@
       <guid>03e04d60-9fa2-40b6-9662-f4c4076b8af4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Thêm chia sẻ/Tab Tính năng_Thành công</testCaseId>
+      <testCaseId>Test Cases/Share Device/Thêm chia sẻ/CSTB1_chia se thiet bi thanh cong tu tab tinh nang cua Live view</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

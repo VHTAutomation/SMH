@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>SĐT_da_duoc_chia_se</name>
+   <name>CSTB4_chia se thiet bi khong thanh cong khi chia se voi sdt da duoc chia se</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

@@ -17,27 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.viettel.vhome2')
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
 Mobile.tap(findTestObject('ObjectManThietBi/choncam - CNME00000586'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang (1)'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/btn_chiaseTB'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi (1)'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectManThietBi/title_chia_se_thiet_bi'), 0)
 
-Mobile.setText(findTestObject('ObjectChiaSeThietBi/textbox_st'), '0394361750', 0)
+Mobile.setText(findTestObject('ObjectManThietBi/txtbox_nhap_so_dien_thoai'), GlobalVariable.user_shared, 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/nhap_sdt_btn_Tiep_tuc'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_tiep_tuc_nhap_so_dien_thoai'), 0)
 
 Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/popup_tk_da_duoc_chia_se'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_OK_tk_da_duoc_chia_se'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_OK_popup_tai_khoan_da_duoc_chia_se_thiet_bi'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectManThietBi/title_chia_se_thiet_bi'), 0)
 
 Mobile.closeApplication()
 
