@@ -19,10 +19,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8e705982-5607-4457-aaaa-ff61372f4660</guid>
+      <guid>5030ac41-107d-4890-a4c8-f349439d9702</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/QuanLyTaiKhoan/DangNhap/dang nhap tai khoan test the yeu thich</testCaseId>
+      <testCaseId>Test Cases/QuanLyTaiKhoan/DangNhap/QLTK1_dang nhap thanh cong</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

@@ -21,7 +21,7 @@ Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FA
 
 Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/choncam - CNME00000586'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/opt_chon_cam_chia_se'), 0)
 
 Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang (1)'), 0)
 
@@ -29,7 +29,7 @@ Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi (1)'), 0)
 
 Mobile.verifyElementVisible(findTestObject('ObjectManThietBi/title_chia_se_thiet_bi'), 0)
 
-Mobile.setText(findTestObject('ObjectManThietBi/txtbox_nhap_so_dien_thoai'), GlobalVariable.user_the_yeu_thich, 0)
+Mobile.setText(findTestObject('ObjectManThietBi/txtbox_nhap_so_dien_thoai'), GlobalVariable.username, 0)
 
 Mobile.tap(findTestObject('ObjectManThietBi/btn_tiep_tuc_nhap_so_dien_thoai'), 0)
 

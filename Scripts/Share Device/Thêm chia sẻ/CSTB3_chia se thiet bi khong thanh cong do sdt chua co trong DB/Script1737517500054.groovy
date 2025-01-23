@@ -21,7 +21,7 @@ Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FA
 
 Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/choncam - CNME00000586'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/opt_chon_cam_chia_se'), 0)
 
 Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang (1)'), 0)
 

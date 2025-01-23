@@ -29,7 +29,7 @@ Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_Them_chia_se'), 0)
 
 Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chon_thiet_bi'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/android.widget.TextView - CNME00000586'), 0)
+// Mobile.tap(findTestObject('ObjectChiaSeThietBi/android.widget.TextView - CNME00000586'), 0)
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/chon_thietbi_btn_Tiep_tuc'), 0)
 
