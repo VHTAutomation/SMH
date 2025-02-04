@@ -162,7 +162,7 @@
       <guid>d9316130-41ab-4368-95ae-3807efa5de56</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/Chấp nhận thành công</testCaseId>
+      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/CSTB6_chap nhan chia se thanh cong tu thong bao o trang chu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -183,7 +183,7 @@
       <guid>858f95b9-c461-4831-b700-60c0ab964421</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Sửa quyền/Sửa quyền thành công</testCaseId>
+      <testCaseId>Test Cases/Share Device/Sửa quyền/CSTB14_sua quyen chia se thanh cong</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -232,7 +232,7 @@
       <guid>81a4bbcd-815f-4eb9-a2ff-d55001376123</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/Chấp nhận thành công</testCaseId>
+      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/CSTB6_chap nhan chia se thanh cong tu thong bao o trang chu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

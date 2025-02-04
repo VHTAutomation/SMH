@@ -19,25 +19,43 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/tab_ca_nhan'), 0)
+
+Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManCaNhan/title_quan_ly_chung'), 0)
+
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/title_quan_ly_chia_se'), 0)
+
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/title_thiet_bi_da_chia_se (1)'), 0)
+
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/thiet_bi_da_chia_se- CNME00000586'), 0)
+
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/icon_next_thong_tin_chia_se'), 0)
+
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/chkbox_dam_thoai'), 0)
+
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_luu_thong_tin_chia_se'), 0)
+
+Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/popup_cap_nhat_quyen_thanh_cong'), 0)
+
+Mobile.closeApplication()
+
+WebUI.callTestCase(findTestCase('Đăng xuất/Đăng xuất thành công'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Đăng nhập/Đăng nhập thành công'), [:], FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
 Mobile.tap(findTestObject('ObjectManThietBi/opt_chon_cam'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/btn Cai Dat Camera'), 0)
+String damthoai_display = Mobile.getAttribute(findTestObject('Object Repository/ObjectCaiDat/liveview_btn_dam_thoai'), 'enabled', 
+    10)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/Button_Huy_nhan_chia_se'), 0)
-
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/btn_huy_bo_popup_xac_nhan_huy_nhan_chia_se'), 0)
-
-Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/Huy chia se/Button_Huy_nhan_chia_se'), 0)
-
-Mobile.tap(findTestObject('ObjectManThietBi/cai_dat_icon_back'), 0)
-
-Mobile.tap(findTestObject('ObjectManThietBi/liveview_icon_back'), 0)
-
-Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
-
-Mobile.verifyElementExist(findTestObject('ObjectManThietBi/opt_chon_cam'), 0)
+//println (damthoai_display)
+if (damthoai_display == 'false') {
+    println('button disable')
+} else {
+    println('button enable')
+}
 
 Mobile.closeApplication()
 

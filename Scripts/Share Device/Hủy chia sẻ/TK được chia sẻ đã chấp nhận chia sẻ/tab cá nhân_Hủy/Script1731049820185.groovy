@@ -17,55 +17,35 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Đăng nhập/Đăng nhập thành công'), [:], FailureHandling.STOP_ON_FAILURE)
-
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/tab_ca_nhan'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/title_quanlychung'), 0)
+Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManCaNhan/title_quan_ly_chung'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/tab_quan_ly_chia_se (1)'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/title_quan_ly_chia_se'), 0)
 
-<<<<<<< HEAD
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/title_Thietbidachapnhan'), 0)
-=======
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/title_Thietbidachapnhan'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-<<<<<<< HEAD
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/chon_tb_da_chap_nhan- 46674403b7b6e043'), 0)
-=======
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/chon_tb_da_chap_nhan- 46674403b7b6e043'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/thiet_bi_da_chia_se- CNME00000586'), 0)
 
-<<<<<<< HEAD
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/Button_Huy_nhan_chia_se'), 0)
-=======
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/Button_Huy_nhan_chia_se'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-<<<<<<< HEAD
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/Huy_nhan_chia_se_btn Huy bo'), 0)
-=======
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/Huy_nhan_chia_se_btn Huy bo'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/btn_huy_bo_popup_xac_nhan_huy_nhan_chia_se'), 0)
 
-<<<<<<< HEAD
-Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/Button_Huy_nhan_chia_se'), 0)
-=======
 Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/Huy chia se/Button_Huy_nhan_chia_se'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_back_thong_tin_chia_se'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_back_thong_tin_chia_se'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_back_thong_tin_chia_se'), 0)
+
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_back_thong_tin_chia_se'), 0)
 
 Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.verifyElementExist(findTestObject('ObjectManThietBi/chon_cam - 46674403b7b6e043'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectManThietBi/opt_chon_cam'), 0)
 
 Mobile.closeApplication()
 

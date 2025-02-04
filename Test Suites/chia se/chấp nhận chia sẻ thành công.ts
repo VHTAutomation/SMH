@@ -22,7 +22,7 @@
       <guid>c4a52a90-fa8d-4fd9-b626-2e841b10d472</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/Chấp nhận thành công</testCaseId>
+      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/CSTB6_chap nhan chia se thanh cong tu thong bao o trang chu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

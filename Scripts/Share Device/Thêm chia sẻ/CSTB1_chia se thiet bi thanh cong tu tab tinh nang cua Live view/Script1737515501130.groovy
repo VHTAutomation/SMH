@@ -21,32 +21,29 @@ Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FA
 
 Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-
 Mobile.tap(findTestObject('ObjectManThietBi/opt_chon_cam'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang (1)'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi (1)'), 0)
 
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi (1)'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi'), 0)
+Mobile.setText(findTestObject('ObjectManThietBi/txtbox_nhap_so_dien_thoai'), GlobalVariable.user_shared, 0)
 
-Mobile.setText(findTestObject('ObjectChiaSeThietBi/textbox_st'), GlobalVariable.user_share, 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_tiep_tuc_nhap_so_dien_thoai'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/nhap_sdt_btn_Tiep_tuc'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/chkbox_quyen_xem_lai'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/chon_quyen_xem_lai'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_hoan_thanh_thiet_lap_quyen'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_hoan_thanh'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/popup_gui_loi_moi_chia_se_thanh_cong'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/popup_guichiasethanhcong'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi (1)'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_thiet_bi_da_chia_se_den (1)'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectManThietBi/title_chiaseTBden'), 0)
-
-Mobile.verifyElementText(findTestObject('ObjectManThietBi/chia se TB den_sdt chia se'), GlobalVariable.user_share)
+Mobile.verifyElementText(findTestObject('ObjectChiaSeThietBi/title_so_dien_thoai_chia_se_den'), GlobalVariable.user_shared)
 
 Mobile.closeApplication()
-
 
