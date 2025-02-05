@@ -17,27 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.viettel.vhome2')
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
+Mobile.tap(findTestObject('ObjectManHinhChinh/title_ca_nhan'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/choncam - CNME00000586'), 0)
+Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManCaNhan/title_quan_ly_chung'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/title_quan_ly_chia_se'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/btn_chiaseTB'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/title_thiet_bi_doi_chap_nhan'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/icon_chon_cam'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/chiaseTB_btn_huychiase'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/btn_tu_choi_chia_se'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/chitietchiase_btn_huy'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/btn_xac_nhan_popup_xac_nhan_huy_nhan_chia_se'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/popup_xac_nhan_Huy'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/Huy chia se/popup_ban da tu choi thiet bi'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_Huy_Huychiase'), 0)
-
-Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chi_tiet_chia_se'), 0)
+Mobile.verifyElementNotExist(findTestObject('ObjectChiaSeThietBi/icon_chon_cam'), 0)
 
 Mobile.closeApplication()
 

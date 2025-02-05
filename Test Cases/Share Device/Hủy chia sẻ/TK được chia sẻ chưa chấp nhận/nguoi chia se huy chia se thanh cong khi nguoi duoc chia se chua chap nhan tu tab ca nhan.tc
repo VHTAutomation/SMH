@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CSTB14_sua quyen chia se thanh cong</name>
+   <name>nguoi chia se huy chia se thanh cong khi nguoi duoc chia se chua chap nhan tu tab ca nhan</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>458a80f8-00f8-4d4c-ac6d-b84383bbb85f</testCaseGuid>
+   <testCaseGuid>ca1292a7-dceb-4630-8a71-1ab51be34608</testCaseGuid>
 </TestCaseEntity>

@@ -162,7 +162,7 @@
       <guid>d9316130-41ab-4368-95ae-3807efa5de56</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/CSTB6_chap nhan chia se thanh cong tu thong bao o trang chu</testCaseId>
+      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/chap nhan chia se thanh cong tu thong bao o trang chu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -183,7 +183,7 @@
       <guid>858f95b9-c461-4831-b700-60c0ab964421</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Sửa quyền/CSTB14_sua quyen chia se thanh cong</testCaseId>
+      <testCaseId>Test Cases/Share Device/Sửa quyền/sua quyen chia se thanh cong</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -232,7 +232,7 @@
       <guid>81a4bbcd-815f-4eb9-a2ff-d55001376123</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/CSTB6_chap nhan chia se thanh cong tu thong bao o trang chu</testCaseId>
+      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/chap nhan chia se thanh cong tu thong bao o trang chu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -253,7 +253,7 @@
       <guid>f77bec43-9328-49fb-addf-13cfe3881f90</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Hủy chia sẻ/TK được chia sẻ chưa chấp nhận/Hủy Thành công khi chưa chấp nhận</testCaseId>
+      <testCaseId>Test Cases/Share Device/Hủy chia sẻ/TK được chia sẻ chưa chấp nhận/nguoi chia se huy chia se thanh cong khi nguoi duoc chia se chua chap nhan tu liveview</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -274,7 +274,7 @@
       <guid>d9020254-2d9b-4eb8-9f70-8d5fcd480379</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Từ chối chia sẻ/Từ chối thành công</testCaseId>
+      <testCaseId>Test Cases/Share Device/Từ chối chia sẻ/tu choi chia se tu thong bao trang chu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

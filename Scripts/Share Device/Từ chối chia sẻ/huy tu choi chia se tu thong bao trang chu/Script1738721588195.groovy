@@ -25,13 +25,13 @@ Mobile.tap(findTestObject('Object Repository/ObjectChiaSeThietBi/title_ban_dang_
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/icon_chon_cam'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn Tu_choi_chia_se'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/btn_tu_choi_chia_se'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/btn_xac_nhan_popup_xac_nhan_huy_nhan_chia_se'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/btn_huy_bo_popup_xac_nhan_huy_nhan_chia_se'), 0)
 
-Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/title_ban da tu choi tb X duoc chia se tu tk A'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_back_thong_tin_chia_se'), 0)
 
-Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/title Thiet bi doi chap nhan'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/icon_chon_cam'), 0)
 
 Mobile.closeApplication()
 
