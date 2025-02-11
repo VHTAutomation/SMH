@@ -35,10 +35,13 @@ Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucNeu/objTr
 Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucNeu/ObjectTrangThaiThietBiThayDoi/objLuaChonThietBi'), 
     0)
 
-Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucNeu/ObjectTrangThaiThietBiThayDoi/objTrangThaiThietBi'), 
+Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucNeu/ObjectTrangThaiThietBiThayDoi/opt_trang_thai_ket_noi'), 
     0)
 
-Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucNeu/ObjectTrangThaiThietBiThayDoi/btnLuuTrangThaiThietBi'), 
+Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucNeu/ObjectTrangThaiThietBiThayDoi/radio_trang_thai_ket_noi'), 
+    0)
+
+Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucNeu/ObjectTrangThaiThietBiThayDoi/btn_tiep_man_trang_thai_thiet_bi'), 
     0)
 
 Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/btnThi'), 0)

@@ -414,14 +414,14 @@
       <guid>477cee05-8272-47fe-bc07-7a2c05a68d4e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/QuanLyNguCanh/SuaNguCanh/QLNC27_cap_nhat_ten_ngu_canh_tu_dong_thanh_cong</testCaseId>
+      <testCaseId>Test Cases/QuanLyNguCanh/SuaNguCanh/QLNC27_cap nhat ten ngu canh tu dong thanh cong</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>2c154887-1c58-466e-ab26-311ea4dca3f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/QuanLyNguCanh/XoaNguCanh/QLNC33_xoa_ngu_canh_tu_dong</testCaseId>
+      <testCaseId>Test Cases/QuanLyNguCanh/XoaNguCanh/QLNC33_xoa ngu canh tu dong</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
