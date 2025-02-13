@@ -18,13 +18,15 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/Tab_Ca_Nhan'), 0)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Chung'), 0)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Guong_Mat'), 0)
+
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/icon_them_guong_mat_tren_man_QLGM'), 0)
 
@@ -50,30 +52,30 @@ image.addProperty('xpath', ConditionType.EQUALS, '//android.widget.GridView/andr
 Mobile.tap(image, 30)
 
 'Nhấn button thêm ảnh trên màn thay đổi kích thước ảnh'
-Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_anh_tren_man_thay_doi_kich_thuoc_anh'), 30)
+Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_man_thay_doi_kich_thuoc_anh'), 30)
 
 TestObject nhomguongmat = new TestObject('nhomguongmat')
 
-nhomguongmat.addProperty('xpath', ConditionType.EQUALS, '//android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[@text=\'Người nhà\']')
+nhomguongmat.addProperty('xpath', ConditionType.EQUALS, '//android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[@text=\'Gia đình\']')
 
-// Kiểm tra xem nhóm "Người nhà" đã được chọn hay chưa
+// Kiểm tra xem nhóm "Gia đình" đã được chọn hay chưa
 TestObject bottomsheetnhomguongmat = new TestObject('bottomsheet')
 
-bottomsheetnhomguongmat.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView[@text=\'Người nhà\']')
+bottomsheetnhomguongmat.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView[@text=\'Gia đình\']')
 
-// Kiểm tra xem nhóm "Người nhà" đã được chọn hay chưa
+// Kiểm tra xem nhóm "Gia đình" đã được chọn hay chưa
 boolean isSelected = Mobile.verifyElementExist(nhomguongmat, 15, FailureHandling.OPTIONAL)
 
 if (!(isSelected)) {
-    // Nếu chưa chọn, thực hiện tap vào nhóm gương mặt "Người nhà"
-    println('Nhóm \'Người nhà\' chưa được chọn, tiến hành tap.')
+    // Nếu chưa chọn, thực hiện tap vào nhóm gương mặt "Gia đình"
+    println('Nhóm \'Gia đình\' chưa được chọn, tiến hành tap.')
 
     Mobile.tap(findTestObject('ObjectThemGuongMat/icon_xem_thong_tin_nhom_GM'), 0)
 
     Mobile.tap(bottomsheetnhomguongmat, 30 // Nếu đã chọn, ghi log và bỏ qua thao tác
         )
 } else {
-    println('Nhóm \'Người nhà\' đã được chọn, bỏ qua thao tác tap.')
+    println('Nhóm \'Gia đình\' đã được chọn, bỏ qua thao tác tap.')
 }
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/icon_back'), 0)
@@ -87,23 +89,26 @@ Mobile.verifyElementVisible(findTestObject('ObjectThemGuongMat/popup_khi_nhan_ic
 Mobile.verifyElementVisible(findTestObject('ObjectThemGuongMat/popup_khi_nhan_icon_back_btn_Xac_nhan'), 0)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/popup_khi_nhan_icon_back_btn_Xac_nhan'), 0)
+
 TestObject groupNguoiNha = findTestObject('ObjectThemGuongMat/txt_Nhom_guong_mat_Nguoi_Nha')
 
 TestObject face = new TestObject('face')
 
 face.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup//android.widget.TextView[@text=\'Phí Giang\']')
 
-// Kiểm tra sự tồn tại của nhóm "Người nhà"
+// Kiểm tra sự tồn tại của nhóm "Gia đình"
 if (Mobile.waitForElementPresent(groupNguoiNha, 15, FailureHandling.CONTINUE_ON_FAILURE)) {
-	println('Nhóm \'Người nhà\' tồn tại.')
+    println('Nhóm \'Gia đình\' tồn tại.')
 
-	// Kiểm tra sự tồn tại của "Thu Giang" trong nhóm "Người nhà"
-	if (Mobile.waitForElementPresent(face, 10, FailureHandling.CONTINUE_ON_FAILURE)) {
-		println('Gương mặt \'Phí Giang\' tồn tại trong nhóm \'Người nhà\'.')
-	} else {
-		println('Gương mặt \'Phí Giang\' không tồn tại trong nhóm \'Người nhà\'.')
-	}
+    // Kiểm tra sự tồn tại của "Thu Giang" trong nhóm "Gia đình"
+    if (Mobile.waitForElementPresent(face, 10, FailureHandling.CONTINUE_ON_FAILURE)) {
+        println('Gương mặt \'Phí Giang\' tồn tại trong nhóm \'Gia đình\'.')
+    } else {
+        println('Gương mặt \'Phí Giang\' không tồn tại trong nhóm \'Gia đình\'.')
+    }
 } else {
-	println('Nhóm \'Người nhà\' không tồn tại.')
+    println('Nhóm \'Gia đình\' không tồn tại.')
 }
+
 Mobile.closeApplication()
+

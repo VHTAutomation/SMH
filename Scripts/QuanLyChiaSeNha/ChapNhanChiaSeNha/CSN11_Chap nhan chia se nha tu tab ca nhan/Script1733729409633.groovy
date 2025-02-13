@@ -30,7 +30,7 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Quan_Ly_Nha'), 0)
 // Verify đối tượng nhà trong mục lời mời vào nhà
 TestObject invitationObject = new TestObject()
 
-invitationObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView[2]//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Member'] and .//android.widget.TextView[@text='Chấp nhận'] and .//android.widget.TextView[@text='Từ chối']]")
+invitationObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView[2]//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Admin'] and .//android.widget.TextView[@text='Chấp nhận'] and .//android.widget.TextView[@text='Từ chối']]")
 
 'Kiểm tra sự tồn tại của nhà được chia sẻ trong mục lời mời vào nhà'
 Mobile.verifyElementExist(invitationObject, 20)
@@ -38,7 +38,7 @@ Mobile.verifyElementExist(invitationObject, 20)
 // Xây dựng XPath cho phần tử "Chấp nhận" dựa trên tên nhà
 TestObject acceptButton = new TestObject()
 
-acceptButton.addProperty('xpath', ConditionType.EQUALS, "//android.widget.TextView[@text = '$GlobalVariable.houseNameShared_Member']/following-sibling::android.widget.TextView[@text='Chấp nhận']")
+acceptButton.addProperty('xpath', ConditionType.EQUALS, "//android.widget.TextView[@text = '$GlobalVariable.houseNameShared_Admin']/following-sibling::android.widget.TextView[@text='Chấp nhận']")
 
 // Kiểm tra xem phần tử có tồn tại không
 Mobile.verifyElementExist(acceptButton, 10)
@@ -49,7 +49,7 @@ Mobile.tap(acceptButton, 10)
 //  Kiểm tra trên danh sách nhà sau khi nhấn chấp nhận
 TestObject houseItem = new TestObject()
 
-houseItem.addProperty('xpath', ConditionType.CONTAINS, "//android.widget.TextView[contains(@text, '$GlobalVariable.houseNameShared_Member')]")
+houseItem.addProperty('xpath', ConditionType.CONTAINS, "//android.widget.TextView[contains(@text, '$GlobalVariable.houseNameShared_Admin')]")
 
 'Thực hiện tap vào nhà được chia sẻ vừa thực hiện nhấn chấp nhận'
 Mobile.tap(houseItem, 10)
@@ -57,7 +57,7 @@ Mobile.tap(houseItem, 10)
 // Tạo đối tượng động với XPath thành viên trong danh sách
 TestObject peopleObject = new TestObject()
 
-peopleObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.Bietdanh_Member'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared'] and .//android.widget.TextView[@text='Thành viên']]")
+peopleObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.Bietdanh_Admin'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared'] and .//android.widget.TextView[@text='Quản trị viên']]")
 
 ' Kiểm tra sự tồn tại của thành viên sau khi nhấn xác nhận trên màn hình Quản lý nhà của nhà được chia sẻ'
 Mobile.verifyElementExist(peopleObject, 10)
@@ -74,7 +74,7 @@ tapDynamicObject('//android.widget.TextView[1]', 0)
 
 TestObject houseObject_home = new TestObject()
 
-houseObject_home.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//androidx.appcompat.widget.LinearLayoutCompat[ .//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Member'] and .//android.widget.ImageView]")
+houseObject_home.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//androidx.appcompat.widget.LinearLayoutCompat[ .//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Admin'] and .//android.widget.ImageView]")
 
 'Kiểm tra việc tồn tại của nhà được chia sẻ trên popup chọn nhà trên tab trang chủ'
 Mobile.verifyElementExist(houseObject_home, 10 // timeout 10s
@@ -104,7 +104,7 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/popup_chon _nha_Quan_Ly_Nha'), 0)
 // Sử dụng XPath để chọn phần tử nhà bất kỳ trên danh sách tại màn quản lý nhà
 TestObject houseObject = new TestObject()
 
-houseObject.addProperty('xpath', ConditionType.CONTAINS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$GlobalVariable.houseNameShared_Member')]")
+houseObject.addProperty('xpath', ConditionType.CONTAINS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$GlobalVariable.houseNameShared_Admin')]")
 
 'Nhấn vào nhà chia sẻ trên màn Quản lý nhà chứa danh sách nhà của tài khoản'
 Mobile.tap(houseObject, 0)

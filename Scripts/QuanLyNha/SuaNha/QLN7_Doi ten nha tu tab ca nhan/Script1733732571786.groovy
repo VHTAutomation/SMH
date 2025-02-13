@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectThemNha/Tab_Ca_Nhan'), 0)
 
@@ -36,7 +36,7 @@ Mobile.tap(houseItem, 0)
 'Nhấn vào Block chức năng đổi tên nhà'
 Mobile.tap(findTestObject('ObjectSuaNha/Menu_doi_ten_nha_tren_man_quan_ly_nha'), 0)
 
-String updatedhousename_canhan = "${GlobalVariable.housename_canhan}_Update"
+String updatedhousename_canhan = "$GlobalVariable.housename_canhan" + '_Update'
 
 Mobile.setText(findTestObject('ObjectSuaNha/txtbox_nhap_ten_nha'), updatedhousename_canhan, 0)
 
@@ -52,7 +52,7 @@ Mobile.tap(findTestObject('ObjectSuaNha/btn_OK_tren_popup_edit_nha_thanh_cong'),
 
 Mobile.tap(findTestObject('ObjectSuaNha/icon_back'), 0)
 
-Mobile.tap(findTestObject('ObjectSuaNha/icon_back'), 0)
+Mobile.tap(findTestObject('ObjectSuaNha/icon_back_man_quan_ly_nha'), 0)
 
 TestObject houseItem_update = new TestObject('houseItem_update')
 
@@ -64,15 +64,17 @@ Mobile.verifyElementExist(houseItem_update, 10)
 //Mobile.verifyElementExist(findTestObject('null'), 0)
 Mobile.tap(findTestObject('ObjectSuaNha/icon_back'), 0)
 
-Mobile.tap(findTestObject('ObjectThemNha/icon_back'), 0)
+Mobile.tap(findTestObject('ObjectSuaNha/icon_back'), 0)
 
 Mobile.tap(findTestObject('ObjectSuaNha/Tab_Trang_Chu'), 0)
 
 tapDynamicObject('//android.widget.TextView[1]', 0)
+
 'Nhấn vào nhà vừa edit trên popup chọn nhà trê trang chủ'
 Mobile.tap(houseItem_update, 0)
 
 Mobile.tap(findTestObject('ObjectSuaNha/Tab_Thiet_Bi'), 0)
+
 'Kiểm tra nhà vừa edit trên tab thiết bị'
 Mobile.verifyElementExist(houseItem_update, 0)
 

@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.viettel.vhome2', FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/tabTrangChu'), 0)
 
@@ -48,10 +48,14 @@ Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucThi/objVa
 
 Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucThi/ObjectVanHanhThietBi/opt_thiet_bi_1'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucThi/ObjectVanHanhThietBi/rdbtn_lua_chon_hanh_dong'), 
+Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucThi/ObjectVanHanhThietBi/opt_quay_den_vi_tri_thiet_lap_truoc'), 
+    0)
+
+Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucThi/ObjectVanHanhThietBi/radio_option_van_hanh_thet_bi'), 
     0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucThi/ObjectVanHanhThietBi/btn_luu_hanh_dong'), 0)
+Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucNeu/ObjectTrangThaiThietBiThayDoi/btn_tiep_man_trang_thai_thiet_bi'), 
+    0)
 
 Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/btnThietLapThoiGianNguCanh'), 0)
 

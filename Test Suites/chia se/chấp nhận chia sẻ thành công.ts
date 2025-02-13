@@ -15,14 +15,14 @@
       <guid>d1aa2b25-625f-400b-b46a-528ba44d16de</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Thêm chia sẻ/Tab Tính năng_Thành công</testCaseId>
+      <testCaseId>Test Cases/Share Device/Thêm chia sẻ/CSTB1_chia se thiet bi thanh cong tu tab tinh nang cua Live view</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c4a52a90-fa8d-4fd9-b626-2e841b10d472</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/Chấp nhận thành công</testCaseId>
+      <testCaseId>Test Cases/Share Device/Chấp nhận chia sẻ/chap nhan chia se thanh cong tu thong bao o trang chu</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

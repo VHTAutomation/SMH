@@ -27,7 +27,7 @@ Mobile.setText(findTestObject('ObjectDangNhap/txtfield_mat_khau'), GlobalVariabl
 
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('ObjectDangNhap/btn_dang_nhap'), 0)
+Mobile.tap(findTestObject('ObjectDangNhap/btn_dang_nhap (1)'), 0)
 
 Mobile.verifyElementText(findTestObject('ObjectDangNhap/txt_so_dien_thoai_hoac_mat_khau_khong_chinh_xac'), 'Số điện thoại hoặc mật khẩu không chính xác')
 
