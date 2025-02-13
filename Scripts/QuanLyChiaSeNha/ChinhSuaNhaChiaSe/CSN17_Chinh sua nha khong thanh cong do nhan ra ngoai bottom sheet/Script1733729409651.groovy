@@ -24,7 +24,7 @@ import org.openqa.selenium.NoSuchElementException as NoSuchElementException
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 tapDynamicObject('//android.widget.TextView[1]', 0)
 
@@ -47,13 +47,14 @@ peopleObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview
 
 Mobile.tap(peopleObject, 0)
 
-String updatedBietdanhMember ="${GlobalVariable.Bietdanh_Admin}_Update"
+String updatedBietdanhMember = "$GlobalVariable.Bietdanh_Admin" + '_Update'
 
 Mobile.setText(findTestObject('ObjectChiaSeNha/popup_cap _nhat _thanh _vien_txtbox_biet_danh'), updatedBietdanhMember, 0)
 
 Mobile.pressBack()
 
 Mobile.tap(findTestObject('ObjectChiaSeNha/popup_chia_se_nha_rdbtn_thanh_vien'), 0)
+
 'Nhấn nút "Back" của thiết bị để đóng popup '
 Mobile.pressBack()
 

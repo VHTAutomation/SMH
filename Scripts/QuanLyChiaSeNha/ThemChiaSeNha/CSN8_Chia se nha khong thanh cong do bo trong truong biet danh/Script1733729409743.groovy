@@ -16,7 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import io.appium.java_client.android.AndroidDriver as AndroidDriver
@@ -25,7 +24,7 @@ import org.openqa.selenium.NoSuchElementException as NoSuchElementException
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectChiaSeNha/Tab_Ca_Nhan'), 0)
 
@@ -35,14 +34,13 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Quan_Ly_Nha'), 0)
 
 // Sử dụng XPath để chọn phần tử trong RecyclerView tại vị trí thứ 1
 TestObject houseObject = new TestObject()
-houseObject.addProperty(
-	'xpath',
-	ConditionType.EQUALS,
-	"//androidx.recyclerview.widget.RecyclerView[1]//android.view.ViewGroup[1]//android.widget.TextView[1]"
-)
-Mobile.tap(houseObject,0)
+
+houseObject.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView[1]//android.view.ViewGroup[1]//android.widget.TextView[1]')
+
+Mobile.tap(houseObject, 0)
 
 Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Chia_se_nha'), 0)
+
 //Mobile.verifyElementVisible(findTestObject('ObjectChiaSeNha/popup_chia_se _nha_title'), 0)
 //Mobile.verifyElementVisible(findTestObject('ObjectChiaSeNha/popup_chia_se_nha_txtbox_tai_khoan_duoc_chia_se'), 0)
 //Mobile.verifyElementVisible(findTestObject('ObjectChiaSeNha/popup_chia_se_nha_txtbox_biet_danh'), 0)
@@ -53,7 +51,8 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Chia_se_nha'), 0)
 //Mobile.verifyElementVisible(findTestObject('ObjectChiaSeNha/popup_chia_se_nha_btn _xac_nhan'), 0)
 //Mobile.verifyElementNotChecked(findTestObject('ObjectChiaSeNha/popup_chia_se_nha_rdbtn_quan_tri_vien'), 0)
 //Mobile.verifyElementChecked(findTestObject('ObjectChiaSeNha/popup_chia_se_nha_rdbtn_thanh_vien'), 0)
-Mobile.setText(findTestObject('ObjectChiaSeNha/popup_chia_se_nha_txtbox_tai_khoan_duoc_chia_se'),'0986784498', 0)
+Mobile.setText(findTestObject('ObjectChiaSeNha/popup_chia_se_nha_txtbox_tai_khoan_duoc_chia_se'), '0986784498', 0)
+
 Mobile.tap(findTestObject('ObjectChiaSeNha/popup_chia_se_nha_rdbtn_quan_tri_vien'), 0)
 
 //Mobile.hideKeyboard() : dùng lệnh này ẩn bàn phím và ẩn luôn cả popup chia sẻ nhà
@@ -70,17 +69,18 @@ String expectedPartialMessage = 'Vui lòng nhập biệt danh'
 //Khối try-catch giúp quản lý lỗi trong quá trình kiểm tra. Nếu không tìm thấy Toast,
 // mã sẽ ném ra ngoại lệ NoSuchElementException và in ra thông báo "Toast message không xuất hiện hoặc không tìm thấy XPath".
 try {
-	WebDriverWait wait = new WebDriverWait(driver, 15)
+    WebDriverWait wait = new WebDriverWait(driver, 15)
 
-	AndroidElement toastElement = driver.findElementByXPath('//android.widget.Toast[1]')
+    AndroidElement toastElement = driver.findElementByXPath('//android.widget.Toast[1]')
 
-	// AndroidElement toastElement = (AndroidElement) wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.Toast[1]")))
-	assert toastElement.getText().equals(expectedPartialMessage)
+    // AndroidElement toastElement = (AndroidElement) wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.Toast[1]")))
+    assert toastElement.getText().equals(expectedPartialMessage)
 
-	println('Toast message chứa nội dung mong đợi.')
+    println('Toast message chứa nội dung mong đợi.')
 }
 catch (NoSuchElementException e) {
-	println('Toast message không xuất hiện hoặc không tìm thấy XPath.')
-}
+    println('Toast message không xuất hiện hoặc không tìm thấy XPath.')
+} 
 
 Mobile.closeApplication()
+

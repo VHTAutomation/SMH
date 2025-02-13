@@ -34,7 +34,7 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Quan_Ly_Nha'), 0)
 
 TestObject houseObject = new TestObject('houseObject')
 
-houseObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$GlobalVariable.houseNameShared_Member')]")
+houseObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$GlobalVariable.houseNameShared_Admin')]")
 
 'Nhấn vào nhà My Home'
 Mobile.tap(houseObject, 0 // tap vào Nhà được chia sẻ:" Nhà Chia Sẻ"

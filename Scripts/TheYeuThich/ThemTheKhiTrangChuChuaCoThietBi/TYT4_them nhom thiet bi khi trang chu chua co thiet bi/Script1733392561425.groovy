@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.viettel.vhome2', FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/tabTrangChu'), 0)
 
@@ -33,7 +33,8 @@ Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThic
 
 Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/objThietLapTrangChu'), 0)
 
-Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/objXoaNhomThietBi_ThietLapTrangChu'), 0)
+Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/objXoaNhomThietBi_ThietLapTrangChu'), 
+    0)
 
 Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/btnLuu'), 0)
 

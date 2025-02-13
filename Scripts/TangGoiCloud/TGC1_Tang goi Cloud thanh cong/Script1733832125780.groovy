@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-Mobile.startExistingApplication(GlobalVariable.Environment_stg, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectTangGoiCloud/txt_Dich_vu_Camera'), 0)
 
@@ -29,11 +29,13 @@ SeeMoreButton.addProperty('xpath', ConditionType.EQUALS, '//android.widget.TextV
 'clcik vào button xem thêm'
 Mobile.tap(SeeMoreButton, 20)
 
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_tang_nguoi_than'), 0)
 
-Mobile.setText(findTestObject('ObjectTangGoiCloud/txtbox_nhap_so_dien_thoi'), '0866617796', 0)
+Mobile.setText(findTestObject('ObjectTangGoiCloud/txtbox_nhap_so_dien_thoi'), '0394361750', 0)
 
-String SerialCamera = '755464c536defb73'
+String SerialCamera = '0166aa5d010c7df9'
 
 Mobile.setText(findTestObject('ObjectTangGoiCloud/txt_serial_camera'), SerialCamera, 0)
 
@@ -45,9 +47,9 @@ dongtruoccuoc.addProperty('xpath', ConditionType.EQUALS, '//android.widget.TextV
 
 Mobile.tap(dongtruoccuoc, 0)
 
-Mobile.scrollToText('Tài khoản đã liên kết', FailureHandling.STOP_ON_FAILURE)
+Mobile.scrollToText('Điều khoản Viettel Home', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('ObjectTangGoiCloud/rdbtn_tai_khoan_da_lien_ket'), 0)
+Mobile.tap(findTestObject('ObjectTangGoiCloud/opt_thanh_toan_bang_viettel_paygate'), 0)
 
 Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_thanh_toan'), 0)
 

@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/Tab_Ca_Nhan'), 0)
 
@@ -26,13 +26,15 @@ Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Chung'), 0)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Guong_Mat'), 0)
 
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('ObjectThemGuongMat/icon_them_guong_mat_tren_man_QLGM'), 0)
 
 'Set tên gương mặt là Thu Giang'
 Mobile.setText(findTestObject('ObjectThemGuongMat/txtbox_nhap_ten_guong_mat'), 'Thu Giang_Nguoi quen', 0)
 
 'Số ảnh muốn chọn'
-int numberOfImages = 15
+int numberOfImages = 1
 
 for (int i = 1; i <= numberOfImages; i++) {
     //TestObject daucong= new TestObject('daucong' + i)
@@ -54,14 +56,13 @@ for (int i = 1; i <= numberOfImages; i++) {
     // Tạo TestObject động với XPath rút gọn
     TestObject image = new TestObject('DynamicImage' + i)
 
-    image.addProperty('xpath', ConditionType.EQUALS, '//android.widget.GridView/android.widget.FrameLayout[' + i + ']//android.widget.ImageView')
+    image.addProperty('xpath', ConditionType.EQUALS, ('//android.widget.GridView/android.widget.FrameLayout[' + i) + ']//android.widget.ImageView')
 
     'Nhấn vào ảnh chọn'
     Mobile.tap(image, 30)
 
     'Nhấn button thêm ảnh trên màn thay đổi kích thước ảnh'
-    Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_anh_tren_man_thay_doi_kich_thuoc_anh'), 30)
-	
+    Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_man_thay_doi_kich_thuoc_anh'), 30)
 }
 
 Mobile.scrollToText('Nhóm gương mặt')
@@ -70,16 +71,16 @@ TestObject nhomguongmat = new TestObject('nhomguongmat')
 
 nhomguongmat.addProperty('xpath', ConditionType.EQUALS, '//android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[@text=\'Người quen\']')
 
-// Kiểm tra xem nhóm "Người nhà" đã được chọn hay chưa
+// Kiểm tra xem nhóm "Người quen" đã được chọn hay chưa
 TestObject bottomsheetnhomguongmat = new TestObject('bottomsheet')
 
 bottomsheetnhomguongmat.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView[@text=\'Người quen\']')
 
 // Kiểm tra xem nhóm "Người quen" đã được chọn hay chưa
-boolean isSelected = Mobile.verifyElementExist(nhomguongmat,30, FailureHandling.OPTIONAL)
+boolean isSelected = Mobile.verifyElementExist(nhomguongmat, 30, FailureHandling.OPTIONAL)
 
 if (!(isSelected)) {
-    // Nếu chưa chọn, thực hiện tap vào nhóm gương mặt "Người nhà"
+    // Nếu chưa chọn, thực hiện tap vào nhóm gương mặt "Người quen"
     println('Nhóm \'Người quen\' chưa được chọn, tiến hành tap.')
 
     Mobile.tap(findTestObject('ObjectThemGuongMat/icon_xem_thong_tin_nhom_GM'), 0)
@@ -99,11 +100,11 @@ TestObject face = new TestObject('face')
 
 face.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup//android.widget.TextView[@text=\'Thu Giang_Nguoi quen\']')
 
-// Kiểm tra sự tồn tại của nhóm "Người nhà"
+// Kiểm tra sự tồn tại của nhóm "Người quen"
 if (Mobile.waitForElementPresent(groupNguoiNha, 15, FailureHandling.CONTINUE_ON_FAILURE)) {
     println('Nhóm \'Người quen\' tồn tại.')
 
-    // Kiểm tra sự tồn tại của "Thu Giang" trong nhóm "Người nhà"
+    // Kiểm tra sự tồn tại của "Thu Giang" trong nhóm "Người quen"
     if (Mobile.waitForElementPresent(face, 10, FailureHandling.CONTINUE_ON_FAILURE)) {
         println('Gương mặt \'Thu Giang_Nguoi quen\' tồn tại trong nhóm \'Người quen\'.')
     } else {

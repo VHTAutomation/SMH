@@ -18,35 +18,37 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectXoaNha/Tab_Ca_Nhan'), 0)
 
 Mobile.tap(findTestObject('ObjectXoaNha/Menu_Quan_Ly_Chung'), 0)
 
 Mobile.tap(findTestObject('ObjectXoaNha/Menu_Quan_Ly_Nha'), 0)
-String house_delete =  "${GlobalVariable.housename_canhan}_Update"
+
+String house_delete = "$GlobalVariable.housename_canhan" + '_Update'
+
 TestObject houseItem = new TestObject('houseItem')
 
-houseItem.addProperty('xpath', ConditionType.EQUALS, "//android.widget.TextView[@text='${house_delete}']")
+houseItem.addProperty('xpath', ConditionType.EQUALS, "//android.widget.TextView[@text='$house_delete']")
 
 Mobile.tap(houseItem, 0)
 
 //Mobile.tap(findTestObject('null'), 0)
-
 Mobile.tap(findTestObject('ObjectXoaNha/btn_Xoa_nha'), 0)
 
 Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confrim_xoa_image'), 0)
 
 Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confrim_xoa_noi dung'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confrim_xoa_btn_Huy_bo'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confirm_xoa_btn_huy_bo'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confrim_xoa_btn_Xoa'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectXoaNha/popup_confirm_xoa_btn_xoa'), 0)
 
-Mobile.tap(findTestObject('ObjectXoaNha/popup_confrim_xoa_btn_Xoa'), 0)
+Mobile.tap(findTestObject('ObjectXoaNha/popup_confirm_xoa_btn_xoa'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
 'Kiểm tra nhà vừa xoá trên màn quản lý nhà'
 Mobile.verifyElementNotExist(houseItem, 0)
 
@@ -57,6 +59,7 @@ Mobile.tap(findTestObject('ObjectXoaNha/icon_back'), 0)
 Mobile.tap(findTestObject('ObjectXoaNha/Tab_Trang_Chu'), 0)
 
 tapDynamicObject('//android.widget.TextView[1]', 0)
+
 'Kiểm tra nhà vừa xoá trên trang chủ'
 Mobile.verifyElementNotExist(houseItem, 0)
 
@@ -65,6 +68,7 @@ Mobile.tap(findTestObject('ObjectXoaNha/NhanRaNgoaiBottomSheet'), 0)
 Mobile.tap(findTestObject('ObjectXoaNha/Tab_Thiet_Bi'), 0)
 
 tapDynamicObject('//android.widget.TextView[1]', 0)
+
 'Kiểm tra nhà vừa xoá trên tab thiết bị'
 Mobile.verifyElementNotExist(houseItem, 0)
 

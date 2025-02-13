@@ -23,28 +23,24 @@ import io.appium.java_client.android.AndroidElement as AndroidElement
 import org.openqa.selenium.NoSuchElementException as NoSuchElementException
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
-import org.openqa.selenium.By
+import org.openqa.selenium.By as By
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
-def tapDynamicObject(String xpath, int timeout) {
-	// Tạo Test Object động
-	//Tạo một Test Object với tên dynamicObject.Test Object này chỉ tồn tại trong bộ nhớ trong khi script chạy và không được lưu trong Object Repository.
-	// Sử dụng Khi không muốn lưu trữ quá nhiều Test Object trong Object Repository
-	//Khi phần tử có vị trí, tên, hoặc thuộc tính thay đổi theo ngữ cảnh.
-	// Khi cần kiểm thử động và linh hoạt với các điều kiện khác nhau
-	TestObject dynamicObject = new TestObject('dynamicObject')
-	dynamicObject.addProperty('xpath', ConditionType.EQUALS,xpath)//XPath của phần tử đầu tiên cần thao tác.
-		// Thực hiện tap khi phần tử đã xuất hiện
-		Mobile.tap(dynamicObject, 0)//  //Hành động "tap" (nhấn) lên phần tử được đại diện bởi dynamicObject.Thời gian chờ (timeout) là 0 giây.
-}
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
+// Tạo Test Object động
+//Tạo một Test Object với tên dynamicObject.Test Object này chỉ tồn tại trong bộ nhớ trong khi script chạy và không được lưu trong Object Repository.
+// Sử dụng Khi không muốn lưu trữ quá nhiều Test Object trong Object Repository
+//Khi phần tử có vị trí, tên, hoặc thuộc tính thay đổi theo ngữ cảnh.
+// Khi cần kiểm thử động và linh hoạt với các điều kiện khác nhau
+//XPath của phần tử đầu tiên cần thao tác.
+// Thực hiện tap khi phần tử đã xuất hiện
+//  //Hành động "tap" (nhấn) lên phần tử được đại diện bởi dynamicObject.Thời gian chờ (timeout) là 0 giây.
 tapDynamicObject('//android.widget.TextView[1]', 0)
 
 Mobile.tap(findTestObject('ObjectThemNha/popup_chon _nha_Quan_Ly_Nha'), 0)
 
 'Cuộn đến phần tử có text là:" Thêm nhà" '
 Mobile.scrollToText('Thêm nhà', FailureHandling.STOP_ON_FAILURE)
-
 
 Mobile.tap(findTestObject('ObjectThemNha/btn_them_nha_tren_man_quan_ly_nha'), 0)
 
@@ -61,8 +57,8 @@ AndroidDriver<?> driver = ((MobileDriverFactory.getDriver()) as AndroidDriver<?>
 //} catch (NoSuchElementException e) {
 //println "Toast message không xuất hiện hoặc không tìm thấy XPath."
 //}
+String expectedPartialMessage = GlobalVariable.toasttennhatrong // Nội dung toast hiển thị
 
-String expectedPartialMessage = GlobalVariable.toasttennhatrong  // Nội dung toast hiển thị
 //Khối try-catch giúp quản lý lỗi trong quá trình kiểm tra. Nếu không tìm thấy Toast,
 // mã sẽ ném ra ngoại lệ NoSuchElementException và in ra thông báo "Toast message không xuất hiện hoặc không tìm thấy XPath".
 /*try {
@@ -75,16 +71,24 @@ String expectedPartialMessage = GlobalVariable.toasttennhatrong  // Nội dung t
 catch (NoSuchElementException e) {
     println('Toast message không xuất hiện hoặc không tìm thấy XPath.')
 } */
-
 WebDriverWait wait = new WebDriverWait(driver, 15)
 
-	AndroidElement toastElement = driver.findElementByXPath('//android.widget.Toast[1]')
+AndroidElement toastElement = driver.findElementByXPath('//android.widget.Toast[1]')
+
 if (toastElement.getText().equals(expectedPartialMessage)) {
-	println("Toast message chứa nội dung mong đợi.");
+    println('Toast message chứa nội dung mong đợi.') // Có thể thêm logic xử lý lỗi hoặc tiếp tục chương trình
 } else {
-	println("Toast message chứa nội dung không mong đợi.");
-	// Có thể thêm logic xử lý lỗi hoặc tiếp tục chương trình
+    println('Toast message chứa nội dung không mong đợi.')
 }
+
 // Đóng ứng dụng
 Mobile.closeApplication()
+
+def tapDynamicObject(String xpath, int timeout) {
+    TestObject dynamicObject = new TestObject('dynamicObject')
+
+    dynamicObject.addProperty('xpath', ConditionType.EQUALS, xpath)
+
+    Mobile.tap(dynamicObject, 0)
+}
 

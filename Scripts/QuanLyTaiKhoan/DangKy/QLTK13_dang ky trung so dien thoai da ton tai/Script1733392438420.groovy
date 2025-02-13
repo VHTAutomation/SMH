@@ -21,21 +21,27 @@ Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FA
 
 Mobile.tap(findTestObject('ObjectDangNhap/btn_dang_ky'), 0)
 
-Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_ten_nguoi_dung'), GlobalVariable.username_register, 
+Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_nhap_ten_nguoi_dung'), GlobalVariable.username_register, 
     0)
 
-Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_so_dien_thoai'), GlobalVariable.username, 0)
-
-Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_mat_khau'), GlobalVariable.password_register, 0)
-
-Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_xac_nhan_mat_khau'), GlobalVariable.password_register, 
+Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_nhap_so_cccd_cmnd'), GlobalVariable.cccd_register, 
     0)
+
+Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_so_dien_thoai (1)'), GlobalVariable.username, 0)
+
+Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_nhap_mat_khau'), GlobalVariable.password_register, 
+    0)
+
+Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_xac_nhan_mat_khau (1)'), GlobalVariable.password_register, 
+    0)
+
+Mobile.hideKeyboard()
 
 Mobile.tap(findTestObject('ObjectDangNhap/ObjectManDangKy/chk_dong_y_dieu_khoan_dich_vu'), 0)
 
 Mobile.tap(findTestObject('ObjectDangNhap/ObjectManDangKy/btn_dang_ky_tai_khoan'), 0)
 
-Mobile.checkElement(findTestObject('ObjectDangNhap/ObjectManDangKy/btn_OK_pop_up_so_dien_thoai_da_ton_tai'), 0)
+Mobile.tap(findTestObject('ObjectDangNhap/ObjectManDangKy/btn_OK_pop_up_so_dien_thoai_da_ton_tai'), 0)
 
 Mobile.closeApplication()
 
