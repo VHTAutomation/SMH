@@ -26,13 +26,15 @@ Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Chung'), 0)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Guong_Mat'), 0)
 
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('ObjectThemGuongMat/icon_them_guong_mat_tren_man_QLGM'), 0)
 
 'Set tên gương mặt là Thu Giang'
 Mobile.setText(findTestObject('ObjectThemGuongMat/txtbox_nhap_ten_guong_mat'), 'Thu Giang_Nguoi quen', 0)
 
 'Số ảnh muốn chọn'
-int numberOfImages = 3
+int numberOfImages = 1
 
 for (int i = 1; i <= numberOfImages; i++) {
     //TestObject daucong= new TestObject('daucong' + i)

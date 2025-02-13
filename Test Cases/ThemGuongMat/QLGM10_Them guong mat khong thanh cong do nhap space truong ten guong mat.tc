@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>QLGM22_cap nhat guong mat tu tab tinh nang liveview</name>
+   <name>QLGM10_Them guong mat khong thanh cong do nhap space truong ten guong mat</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>f271deb6-bb64-4478-ac55-6a6630e5a27b</testCaseGuid>
+   <testCaseGuid>d992db12-1e8c-4519-9ea4-4105f72be168</testCaseGuid>
 </TestCaseEntity>

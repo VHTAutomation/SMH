@@ -32,7 +32,7 @@ Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_guong_mat_tren_man_QLGM')
 Mobile.setText(findTestObject('ObjectThemGuongMat/txtbox_nhap_ten_guong_mat'), 'Thu Giang', 0)
 
 'Số ảnh muốn chọn'
-int numberOfImages = 3
+int numberOfImages = 1
 
 for (int i = 1; i <= numberOfImages; i++) {
     //TestObject daucong= new TestObject('daucong' + i)

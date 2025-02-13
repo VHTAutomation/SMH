@@ -16,10 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-Mobile.startExistingApplication(GlobalVariable.Environment_stg, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectTangGoiCloud/txt_Dich_vu_Camera'), 0)
 
@@ -29,6 +28,8 @@ SeeMoreButton.addProperty('xpath', ConditionType.EQUALS, '//android.widget.TextV
 
 'clcik vào button xem thêm'
 Mobile.tap(SeeMoreButton, 10)
+
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_tang_nguoi_than'), 0)
 
@@ -40,13 +41,16 @@ Mobile.setText(findTestObject('ObjectTangGoiCloud/txt_serial_camera'), SerialCam
 
 Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_Tiep'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectTangGoiCloud/popup_ma_serial_khong dung_khong thuoc tk nhanl_image'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectTangGoiCloud/popup_ma_serial_khong dung_khong thuoc tk nhanl_image'), 
+    0)
 
 Mobile.verifyElementVisible(findTestObject('ObjectTangGoiCloud/popup_ma_serial_khong dung_khong thuoc tk nhan_title'), 0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectTangGoiCloud/popup_ma_serial_khong dung_khong thuoc tk nhan_content'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectTangGoiCloud/popup_ma_serial_khong dung_khong thuoc tk nhan_content'), 
+    0)
 
-Mobile.verifyElementVisible(findTestObject('ObjectTangGoiCloud/popup_ma_serial_khong dung_khong thuoc tk nhan_btn_OK'), 0)
+Mobile.verifyElementVisible(findTestObject('ObjectTangGoiCloud/popup_ma_serial_khong dung_khong thuoc tk nhan_btn_OK'), 
+    0)
 
 Mobile.tap(findTestObject('ObjectTangGoiCloud/popup_ma_serial_khong dung_khong thuoc tk nhan_btn_OK'), 0)
 

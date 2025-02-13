@@ -20,28 +20,44 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('ObjectTangGoiCloud/txt_Dich_vu_Camera'), 0)
+Mobile.tap(findTestObject('ObjectThemGuongMat/Tab_Ca_Nhan'), 0)
 
-TestObject SeeMoreButton = new TestObject('SeeMoreButton')
+Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Chung'), 0)
 
-SeeMoreButton.addProperty('xpath', ConditionType.EQUALS, '//android.widget.TextView[@text = \'Lưu trữ cloud\']/following-sibling::android.widget.TextView[@text=\'Xem thêm\']')
-
-'clcik vào button xem thêm'
-Mobile.tap(SeeMoreButton, 10)
+Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Guong_Mat'), 0)
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_tang_nguoi_than'), 0)
+Mobile.tap(findTestObject('ObjectThemGuongMat/icon_them_guong_mat_tren_man_QLGM'), 0)
 
-Mobile.setText(findTestObject('ObjectTangGoiCloud/txtbox_nhap_so_dien_thoi'), '0866617796', 0)
+'Nhập toàn space vào trường tên gương mặt\r\n'
+Mobile.setText(findTestObject('ObjectThemGuongMat/txtbox_nhap_ten_guong_mat'), '             ', 0)
 
-//String SerialCamera = '755464c536defb73'
-Mobile.setText(findTestObject('ObjectTangGoiCloud/txt_serial_camera'), '', 0)
+TestObject plusButton = new TestObject('plus_button')
 
-Mobile.verifyElementVisible(findTestObject('ObjectTangGoiCloud/txt_ma_serial_camera_la_bat_buoc'), 0)
+plusButton.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView[1]/*[last()]/android.widget.ImageView[1]')
 
-boolean isEnabled = Mobile.verifyElementAttributeValue(findTestObject('ObjectTangGoiCloud/btn_Tiep'), 'enabled', 'false', 
-    10, FailureHandling.CONTINUE_ON_FAILURE)
+'Nhấn vào dấu + để thực hiện thêm ảnh'
+Mobile.tap(plusButton, 30)
+
+'Chọn ảnh từ bộ sưu tập'
+Mobile.tap(findTestObject('ObjectThemGuongMat/menu_chon_anh_tu_bo_suu_tap'), 0)
+
+// Tạo TestObject động với XPath rút gọn
+TestObject image = new TestObject('DynamicImage')
+
+image.addProperty('xpath', ConditionType.EQUALS, '//android.widget.GridView/android.widget.FrameLayout[1]//android.widget.ImageView')
+
+'Nhấn vào ảnh chọn'
+Mobile.tap(image, 30)
+
+'Nhấn button thêm ảnh trên màn thay đổi kích thước ảnh'
+Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_man_thay_doi_kich_thuoc_anh'), 30)
+
+Mobile.verifyElementVisible(findTestObject('ObjectThemGuongMat/txt_Vui_long_khong_de_trong_ten_guong_mat'), 0)
+
+boolean isEnabled = Mobile.verifyElementAttributeValue(findTestObject('ObjectThemGuongMat/btn_Them_tren_man_them_guong_mat'), 
+    'enabled', 'false', 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 if (isEnabled) {
     println('Button đang ở trạng thái disabled.')
