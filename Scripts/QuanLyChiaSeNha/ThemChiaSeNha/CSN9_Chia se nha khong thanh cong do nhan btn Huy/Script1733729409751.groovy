@@ -20,7 +20,7 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 import com.kms.katalon.core.exception.StepFailedException as StepFailedException
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectChiaSeNha/Tab_Ca_Nhan'), 0)
 
@@ -30,12 +30,11 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Quan_Ly_Nha'), 0)
 
 // Sử dụng XPath để chọn phần tử trong RecyclerView tại vị trí thứ 1
 TestObject houseObject = new TestObject()
-houseObject.addProperty(
-	'xpath',
-	ConditionType.EQUALS,
-	"//androidx.recyclerview.widget.RecyclerView[1]//android.view.ViewGroup[1]//android.widget.TextView[1]"
-)
-Mobile.tap(houseObject,0)
+
+houseObject.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView[1]//android.view.ViewGroup[1]//android.widget.TextView[1]')
+
+Mobile.tap(houseObject, 0)
+
 Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Chia_se_nha'), 0)
 
 Mobile.setText(findTestObject('ObjectChiaSeNha/popup_chia_se_nha_txtbox_tai_khoan_duoc_chia_se'), '0986784498', 0)

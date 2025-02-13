@@ -25,7 +25,7 @@ Mobile.setText(findTestObject('ObjectDangNhap/txtfield_mat_khau'), GlobalVariabl
 
 Mobile.tap(findTestObject('ObjectDangNhap/chk_ghi_nho_tai_khoan'), 0)
 
-Mobile.tap(findTestObject('ObjectDangNhap/btn_dang_nhap'), 0)
+Mobile.tap(findTestObject('ObjectDangNhap/btn_dang_nhap (1)'), 0)
 
 Mobile.tap(findTestObject('ObjectManHinhChinh/title_ca_nhan'), 0)
 

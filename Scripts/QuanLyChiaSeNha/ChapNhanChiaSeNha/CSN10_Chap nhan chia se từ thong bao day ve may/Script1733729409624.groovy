@@ -23,10 +23,9 @@ import io.appium.java_client.android.AndroidDriver as AndroidDriver
 import io.appium.java_client.android.AndroidElement as AndroidElement
 import io.appium.java_client.android.nativekey.AndroidKey as AndroidKey
 import io.appium.java_client.android.nativekey.KeyEvent as KeyEvent
-import io.appium.java_client.AppiumDriver
+import io.appium.java_client.AppiumDriver as AppiumDriver
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
-
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 /*C1: Mở thanh thông báo trên thiết bị Android'
 MobileDriverFactory.getDriver().pressKey(new KeyEvent(AndroidKey.NOTIFICATION))*/
@@ -39,7 +38,8 @@ MobileDriverFactory.getDriver().pressKey(new KeyEvent(AndroidKey.NOTIFICATION))*
 AppiumDriver<?> driver = MobileDriverFactory.getDriver()
 
 // Thực hiện mở thanh thông báo trên thiết bị Android
-((AndroidDriver<?>) driver).openNotifications()
+    ((driver) as AndroidDriver<?>).openNotifications()
+
 // Tạo TestObject để tìm icon mở nhóm thông báo
 TestObject groupIcon = new TestObject('groupIcon')
 

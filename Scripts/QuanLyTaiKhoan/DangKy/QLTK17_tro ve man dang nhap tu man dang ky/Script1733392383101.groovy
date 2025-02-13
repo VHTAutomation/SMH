@@ -23,7 +23,7 @@ Mobile.tap(findTestObject('ObjectDangNhap/btn_dang_ky'), 0)
 
 Mobile.tap(findTestObject('ObjectDangNhap/ObjectManDangKy/lnk_dang_nhap'), 0)
 
-Mobile.verifyElementText(findTestObject('ObjectDangNhap/btn_dang_nhap'), 'ĐĂNG NHẬP')
+Mobile.verifyElementText(findTestObject('ObjectDangNhap/btn_dang_nhap (1)'), 'ĐĂNG NHẬP')
 
 Mobile.closeApplication()
 

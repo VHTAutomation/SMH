@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-Mobile.startExistingApplication(GlobalVariable.Environment_pro, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/Tab_Ca_Nhan'), 0)
 
@@ -26,39 +26,44 @@ Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Chung'), 0)
 
 Mobile.tap(findTestObject('ObjectThemGuongMat/menu_Quan_Ly_Guong_Mat'), 0)
 
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('ObjectThemGuongMat/icon_them_guong_mat_tren_man_QLGM'), 0)
 
-'Set tên gương mặt là Thu Giang'
+'Bỏ trống trường tên gương mặt\r\n'
 Mobile.setText(findTestObject('ObjectThemGuongMat/txtbox_nhap_ten_guong_mat'), '', 0)
 
-    TestObject plusButton = new TestObject('plus_button')
+TestObject plusButton = new TestObject('plus_button')
 
-    plusButton.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView[1]/*[last()]/android.widget.ImageView[1]')
+plusButton.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView[1]/*[last()]/android.widget.ImageView[1]')
 
-    'Nhấn vào dấu + để thực hiện thêm ảnh'
-    Mobile.tap(plusButton, 30)
+'Nhấn vào dấu + để thực hiện thêm ảnh'
+Mobile.tap(plusButton, 30)
 
-    'Chọn ảnh từ bộ sưu tập'
-    Mobile.tap(findTestObject('ObjectThemGuongMat/menu_chon_anh_tu_bo_suu_tap'), 0)
+'Chọn ảnh từ bộ sưu tập'
+Mobile.tap(findTestObject('ObjectThemGuongMat/menu_chon_anh_tu_bo_suu_tap'), 0)
 
-    // Tạo TestObject động với XPath rút gọn
-    TestObject image = new TestObject('DynamicImage')
+// Tạo TestObject động với XPath rút gọn
+TestObject image = new TestObject('DynamicImage')
 
-   image.addProperty('xpath', ConditionType.EQUALS, ('//android.widget.GridView/android.widget.FrameLayout[1]//android.widget.ImageView'))
-    'Nhấn vào ảnh chọn'
-    Mobile.tap(image, 30)
+image.addProperty('xpath', ConditionType.EQUALS, '//android.widget.GridView/android.widget.FrameLayout[1]//android.widget.ImageView')
 
-    'Nhấn button thêm ảnh trên màn thay đổi kích thước ảnh'
-    Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_anh_tren_man_thay_doi_kich_thuoc_anh'), 30)
+'Nhấn vào ảnh chọn'
+Mobile.tap(image, 30)
+
+'Nhấn button thêm ảnh trên màn thay đổi kích thước ảnh'
+Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_man_thay_doi_kich_thuoc_anh'), 30)
 
 Mobile.verifyElementVisible(findTestObject('ObjectThemGuongMat/txt_Vui_long_khong_de_trong_ten_guong_mat'), 0)
-boolean isEnabled = Mobile.verifyElementAttributeValue(findTestObject('ObjectThemGuongMat/btn_Them_tren_man_them_guong_mat'), 'enabled', 'false',
-	10, FailureHandling.CONTINUE_ON_FAILURE)
+
+boolean isEnabled = Mobile.verifyElementAttributeValue(findTestObject('ObjectThemGuongMat/btn_Them_tren_man_them_guong_mat'), 
+    'enabled', 'false', 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 if (isEnabled) {
-	println('Button đang ở trạng thái disabled.')
+    println('Button đang ở trạng thái disabled.')
 } else {
-	println('Button đang ở trạng thái enable.')
-
+    println('Button đang ở trạng thái enable.')
 }
+
 Mobile.closeApplication()
+

@@ -17,45 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Đăng nhập/Đăng nhập thành công'), [:], FailureHandling.STOP_ON_FAILURE)
-
 Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/chon_cam - 46674403b7b6e043'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/opt_chon_cam'), 0)
 
-<<<<<<< HEAD
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/btn Cai Dat Camera'), 0)
-=======
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/btn Cai Dat Camera'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-<<<<<<< HEAD
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/Button_Huy_nhan_chia_se'), 0)
-=======
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/Button_Huy_nhan_chia_se'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-<<<<<<< HEAD
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/Huy_nhan_chia_se_btn Huy bo'), 0)
-=======
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/Huy_nhan_chia_se_btn Huy bo'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/Huy chia se/btn_huy_bo_popup_xac_nhan_huy_nhan_chia_se'), 0)
 
-<<<<<<< HEAD
-Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/ObjectHuyChiaSe/Button_Huy_nhan_chia_se'), 0)
-=======
 Mobile.verifyElementExist(findTestObject('ObjectChiaSeThietBi/Huy chia se/Button_Huy_nhan_chia_se'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/cai_dat_icon_back'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/btnBack'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/liveview_icon_back'), 0)
 
 Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
-Mobile.verifyElementExist(findTestObject('ObjectManThietBi/chon_cam - 46674403b7b6e043'), 0)
+Mobile.verifyElementExist(findTestObject('ObjectManThietBi/opt_chon_cam'), 0)
 
 Mobile.closeApplication()
 

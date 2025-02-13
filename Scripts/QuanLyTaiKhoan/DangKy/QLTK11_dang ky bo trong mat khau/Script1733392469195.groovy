@@ -21,21 +21,28 @@ Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FA
 
 Mobile.tap(findTestObject('ObjectDangNhap/btn_dang_ky'), 0)
 
-Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_ten_nguoi_dung'), GlobalVariable.username_register, 
+Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_nhap_ten_nguoi_dung'), GlobalVariable.username_register, 
     0)
 
-Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_so_dien_thoai'), GlobalVariable.username_register, 0)
-
-Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_mat_khau'), GlobalVariable.password_register, 0)
-
-Mobile.clearText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_mat_khau'), 0)
-
-Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_xac_nhan_mat_khau'), GlobalVariable.password_register, 
+Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_nhap_so_cccd_cmnd'), GlobalVariable.cccd_register, 
     0)
+
+Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_so_dien_thoai (1)'), GlobalVariable.phone_register, 
+    0)
+
+Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_nhap_mat_khau'), GlobalVariable.password_register, 
+    0)
+
+Mobile.clearText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_nhap_mat_khau'), 0)
+
+Mobile.setText(findTestObject('ObjectDangNhap/ObjectManDangKy/txtfield_xac_nhan_mat_khau (1)'), GlobalVariable.password_register, 
+    0)
+
+Mobile.hideKeyboard()
 
 Mobile.verifyElementText(findTestObject('ObjectDangNhap/ObjectManDangKy/txt_mat_khau_xac_nhan_khong_chinh_xac'), 'Mật khẩu xác nhận không chính xác.')
 
-Mobile.hideKeyboard()
+Mobile.tap(findTestObject('ObjectDangNhap/ObjectManDangKy/chk_dong_y_dieu_khoan_dich_vu'), 0)
 
 Mobile.verifyElementAttributeValue(findTestObject('ObjectDangNhap/ObjectManDangKy/btn_dang_ky_tai_khoan'), 'enabled', 'false', 
     0)

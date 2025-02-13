@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CSTB5_chia se thiet bi khong thanh cong khi chia se voi sdt dang so huu camera</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5ac8c57d-409d-4441-a387-35759734344e</testCaseGuid>
+</TestCaseEntity>
