@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-Mobile.startExistingApplication(GlobalVariable.Environment_stg, FailureHandling.STOP_ON_FAILURE)
+Mobile.startExistingApplication(GlobalVariable.appID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectTangGoiCloud/txt_Dich_vu_Camera'), 0)
 
@@ -29,11 +29,13 @@ SeeMoreButton.addProperty('xpath', ConditionType.EQUALS, '//android.widget.TextV
 'clcik vào button xem thêm'
 Mobile.tap(SeeMoreButton, 10)
 
+Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_tang_nguoi_than'), 0)
 
 Mobile.setText(findTestObject('ObjectTangGoiCloud/txtbox_nhap_so_dien_thoi'), '0394361750', 0)
 
-String SerialCamera = 'G16557872'
+String SerialCamera = '0166aa5d010c7df9'
 
 Mobile.setText(findTestObject('ObjectTangGoiCloud/txt_serial_camera'), SerialCamera, 0)
 
