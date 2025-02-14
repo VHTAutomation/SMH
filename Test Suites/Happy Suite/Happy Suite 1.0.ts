@@ -362,13 +362,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ed597b28-ac81-4496-b2f8-d9585a0c7423</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TangGoiCloud/TGC1_Tang goi Cloud thanh cong</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>e7836e46-9308-4508-9347-a4434f717e03</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

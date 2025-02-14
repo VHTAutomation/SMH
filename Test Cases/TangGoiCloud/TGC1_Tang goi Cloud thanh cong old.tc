@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TGC1_Tang goi Cloud thanh cong</name>
+   <name>TGC1_Tang goi Cloud thanh cong old</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>d8a46a95-b847-46c2-896b-aaeaae32e43a</testCaseGuid>
+   <testCaseGuid>1f8e6e7d-c2cc-4431-b53a-f7cf6f61e3be</testCaseGuid>
 </TestCaseEntity>
