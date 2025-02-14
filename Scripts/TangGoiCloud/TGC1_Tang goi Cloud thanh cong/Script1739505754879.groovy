@@ -53,11 +53,37 @@ Mobile.tap(findTestObject('ObjectTangGoiCloud/opt_thanh_toan_bang_viettel_paygat
 
 Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_thanh_toan'), 0)
 
-Mobile.tap(findTestObject('ObjectTangGoiCloud/popup_gui_ma_xac_minh_btn_OK'), 0)
+Mobile.tap(findTestObject('ObjectTangGoiCloud/radio_viettel_money'), 0)
 
-Mobile.setText(findTestObject('ObjectTangGoiCloud/txtbox_nhap_ma_OTP'), '123123', 0)
+Mobile.tap(findTestObject('ObjectTangGoiCloud/txt_sdt'), 0)
 
-Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_xac_nhan'), 0)
+Mobile.setText(findTestObject('ObjectTangGoiCloud/txtfield_sdt_thanh_toan'), '0983725525', 0)
+
+Mobile.setText(findTestObject('ObjectTangGoiCloud/txtfield_mat_khau_thanh_toan'), '123123', 0)
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_dang_nhap_tai_khoan_viettel_money'), 0)
+
+Mobile.tap(findTestObject('ObjectTangGoiCloud/txt_mo_ta_otp'), 0)
+
+Mobile.setText(findTestObject('ObjectTangGoiCloud/txtfiled_otp_dang_nhap'), '1111', 0)
+
+Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_xac_nhan_otp_dang_nhap'), 0)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_thanh_toan_final'), 0)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.pressBack()
+
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.setText(findTestObject('ObjectTangGoiCloud/txtfield_nhap_otp2'), '1234', 0)
+
+Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_xac_nhan_thanh_toan'), 0)
 
 Mobile.tap(findTestObject('ObjectTangGoiCloud/icon_lich_su_mua_hang'), 0)
 
@@ -81,55 +107,7 @@ Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_trang_thai_goi_c
 
 Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_tong_tien_thanh_toan'), '1.000đ')
 
-Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_sdt_duoc_tang'), '0866617796')
-
-Mobile.tap(findTestObject('ObjectTangGoiCloud/icon_back'), 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('ObjectTangGoiCloud/icon_back'), 0)
-
-Mobile.tap(findTestObject('ObjectTangGoiCloud/icon_back'), 0)
-
-Mobile.tap(findTestObject('ObjectTangGoiCloud/icon_back'), 0)
-
-Mobile.tap(findTestObject('ObjectTangGoiCloud/Tab_Ca_Nhan'), 0)
-
-WebUI.callTestCase(findTestCase('DangXuat/Dang xuat thanh cong'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('DangNhap/Dang nhap thanh cong tk duoc tang goi Cloud'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('ObjectTangGoiCloud/Tab_Thiet_Bi'), 0)
-
-TestObject CameraObject = new TestObject('CameraObject')
-
-// XPath để kiểm tra các điều kiện của ImageView và TextView
-CameraObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$SerialCamera')]")
-
-// Kiểm tra sự tồn tại của phần tử trong thời gian chờ 20 giây
-Mobile.tap(CameraObject, 20)
-
-Mobile.tap(findTestObject('ObjectTangGoiCloud/icon_cai_dat_camera'), 0)
-
-Mobile.scrollToText('Lưu trữ Cloud', FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('ObjectTangGoiCloud/icon_xem_thong_tin_goi_Cloud'), 0)
-
-Mobile.tap(findTestObject('ObjectTangGoiCloud/icon_lich_su_mua_hang'), 0)
-
-Mobile.verifyElementExist(historyObject, 20)
-
-Mobile.tap(historyObject, 0)
-
-Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_thiet_bi_dang_ky'), SerialCamera)
-
-Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_Goi_cuoc_luu_tru'), 'Lưu trữ sự kiện 3 ngày')
-
-Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_dong_truoc_cuoc'), '5 phút')
-
-Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_trang_thai_goi_cuoc'), 'Chưa kích hoạt')
-
-Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_tong_tien_thanh_toan'), '1.000đ')
-
-Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_sdt_tang_goi_cloud'), '0986784498')
+Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_sdt_duoc_tang'), '0394361750')
 
 Mobile.closeApplication()
 
