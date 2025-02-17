@@ -29,23 +29,17 @@ Mobile.tap(findTestObject('ObjectManThietBi/btn_cai_dat'), 0)
 
 Mobile.scrollToText('Dịch vụ Camera', FailureHandling.STOP_ON_FAILURE)
 
-<<<<<<< HEAD
-Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/cai_dat_btn_Chua_dang_ky'), 0)
-=======
 Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/cai_dat_btn_Chua_dang_ky'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
-<<<<<<< HEAD
-Mobile.tap(findTestObject('ObjectCaiDatCamera/ObjectLuuTruCloud/Dich vu Cloud/Dich_vu_Cloud_btn_Dang_ky_ngay'), 0)
-=======
 Mobile.tap(findTestObject('ObjectCaiDat/Luu tru Cloud/Dich vu Cloud/Dich_vu_Cloud_btn_Dang_ky_ngay'), 0)
->>>>>>> branch 'feature_quynhht13' of https://github.com/VHTAutomation/SMH
 
 WebUI.callTestCase(findTestCase('Mua gói Cloud/TC Re-use/Man dang ky luu tru cloud/Khong gia han tu dong bang VTPay Gate'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
+Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('Mua gói Cloud/TC Re-use/Man Dich vu Cloud/Dich vu Cloud_khi dang ky tat gia han'), [:], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Mua gói Cloud/TC Re-use/Man Lich su mua hang - Chi tiet mua hang'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.closeApplication()
 
