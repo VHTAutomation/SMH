@@ -52,7 +52,7 @@ image.addProperty('xpath', ConditionType.EQUALS, '//android.widget.GridView/andr
 Mobile.tap(image, 30)
 
 'Nhấn button thêm ảnh trên màn thay đổi kích thước ảnh'
-Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_man_thay_doi_kich_thuoc_anh'), 30)
+Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_man_thay_doi_size_anh'), 30)
 
 TestObject nhomguongmat = new TestObject('nhomguongmat')
 

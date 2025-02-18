@@ -313,52 +313,17 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4eacf2fe-346e-4bc7-8232-e51920b727fc</guid>
+      <guid>4cf5c56a-a338-414d-b055-e96b446f1960</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Đổi tên Camera/Đổi tên camera thành công</testCaseId>
+      <testCaseId>Test Cases/Mua gói Cloud/Dang ky goi/Cai Dat Camera/Luu tru Cloud/Dang ky goi khong gia han tu dong bang vtpay gate</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8d0e32b6-29c9-4b8b-b97a-8dccc17a07f0</guid>
+      <guid>3e483510-36b2-44f8-9042-9050784c2b7c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Mã hóa/Nhap ma hoa liveview/liveview_nhập mã hóa đúng</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0bcb207b-32aa-447e-9aa7-89ed157f2314</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Mã hóa/Doi mat khau ma hoa/doi mat khau thanh cong</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>cb6f88ed-417a-4729-93fa-491fd56e79f6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Lien ket thanh toan/Lien ket thanh toan thanh cong</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>91d47d4c-0884-4d42-906d-43c025b5d0c8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Mua gói Cloud/Dang ky goi/Trang chu- Dich vu Camera/Dang ky dich vu/Dang ky goi gia han tu dong khi da co tklk</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1f00a5fa-26b4-4f83-9dfb-c2c72697d504</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Mua gói Cloud/Dang ky goi/Trang chu- Dich vu Camera/Dang ky dich vu/Dang ky goi gia han tu dong bang vtp gate_co tklk</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>d5069b8b-f1bf-4aac-933c-ad7e696a7917</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Mua gói Cloud/Mua them goi cuoc/Trang chu/Dang ky dich vu/Mua them goi thanh cong bang tk viettelpay gate</testCaseId>
+      <testCaseId>Test Cases/Mua gói Cloud/Mua them goi cuoc/Cai Dat - Luu tru cloud/Mua them goi thanh cong bang viettelpay gate</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

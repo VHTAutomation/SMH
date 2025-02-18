@@ -35,7 +35,7 @@ Mobile.verifyElementText(findTestObject('ObjectChiaSeThietBi/txt_popup_huy_chia_
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_xac_nhan_popup_huy_chia_se'), 0)
 
-Mobile.verifyElementText(findTestObject('ObjectChiaSeThietBi/popup_da_ngung_chia_se_thiet_bi'), 'Đã thu hồi lời mời chia sẻ thiết bị ae477ce9c1aa7d0d đến tài khoản 0356573351')
+Mobile.verifyElementText(findTestObject('ObjectChiaSeThietBi/popup_da_ngung_chia_se_thiet_bi'), 'Đã thu hồi lời mời chia sẻ thiết bị 1ada05b73c0dfa39 đến tài khoản 0356573351')
 
 Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_man_thiet_bi_da_chia_se'), 0)
 

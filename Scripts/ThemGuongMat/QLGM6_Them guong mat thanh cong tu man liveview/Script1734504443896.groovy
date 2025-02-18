@@ -76,7 +76,7 @@ for (int i = 1; i <= numberOfImages; i++) {
     Mobile.tap(image, 30)
 
     'Nhấn button thêm ảnh trên màn thay đổi kích thước ảnh'
-    Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_man_thay_doi_kich_thuoc_anh'), 30)
+    Mobile.tap(findTestObject('ObjectThemGuongMat/btn_them_man_thay_doi_size_anh'), 30)
 }
 
 TestObject nhomguongmat = new TestObject('nhomguongmat')
