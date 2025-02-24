@@ -27,13 +27,11 @@ Mobile.scrollToText('THÊM THẺ', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/btnThemThe'), 0)
 
-Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/tabNhomThietBi'), 0)
+Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/tabNguCanh'), 0)
 
-Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/tabThietbi'), 0)
+Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/obj_ngu_canh_cham_1'), 0)
 
-Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/radio_thiet_bi_test'), 0)
-
-Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/radio_thiet_bi_2'), 0)
+Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/obj_ngu_canh_cham_2'), 0)
 
 Mobile.tap(findTestObject('ObjectManHinhChinh/ObjectManTrangChu/ObjectTheYeuThich/btnLuu'), 0)
 
