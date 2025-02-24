@@ -33,9 +33,9 @@ Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_tang_nguoi_than'), 0)
 
-Mobile.setText(findTestObject('ObjectTangGoiCloud/txtbox_nhap_so_dien_thoi'), '0394361750', 0)
+Mobile.setText(findTestObject('ObjectTangGoiCloud/txtbox_nhap_so_dien_thoi'), '0364878822', 0)
 
-String SerialCamera = '361abc3f1b9003cb9'
+String SerialCamera = '0166aa5d010c7df9'
 
 Mobile.setText(findTestObject('ObjectTangGoiCloud/txt_serial_camera'), SerialCamera, 0)
 
@@ -107,7 +107,7 @@ Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_trang_thai_goi_c
 
 Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_tong_tien_thanh_toan'), '1.000đ')
 
-Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_sdt_duoc_tang'), '0394361750')
+Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_sdt_duoc_tang'), '0364878822')
 
 Mobile.closeApplication()
 
