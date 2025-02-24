@@ -34,14 +34,14 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Quan_Ly_Nha'), 0)
 
 TestObject houseObject = new TestObject()
 
-houseObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$GlobalVariable.houseNameShared_Admin')]")
+houseObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$GlobalVariable.houseNameShared_Member')]")
 
 ' Nhấn chọn nhà" Nhà Chia Sẻ"'
 Mobile.tap(houseObject, 0)
 
 TestObject peopleObject = new TestObject()
 
-peopleObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.Bietdanh_Admin'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared']]")
+peopleObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.Bietdanh_Member'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared']]")
 
 Mobile.tap(peopleObject, 0)
 
@@ -88,7 +88,7 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/popup_chon _nha_Quan_Ly_Nha'), 0)
 
 TestObject invitationObject = new TestObject()
 
-invitationObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView[2]//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Admin'] and .//android.widget.TextView[@text='Chấp nhận'] and .//android.widget.TextView[@text='Từ chối']]")
+invitationObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView[2]//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Member'] and .//android.widget.TextView[@text='Chấp nhận'] and .//android.widget.TextView[@text='Từ chối']]")
 
 'Kiểm tra sự tồn tại của nhà được chia sẻ trong mục lời mời vào nhà'
 Mobile.verifyElementNotExist(invitationObject, 20)

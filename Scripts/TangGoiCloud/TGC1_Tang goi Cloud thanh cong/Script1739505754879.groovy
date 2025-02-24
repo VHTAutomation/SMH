@@ -35,7 +35,7 @@ Mobile.tap(findTestObject('ObjectTangGoiCloud/btn_tang_nguoi_than'), 0)
 
 Mobile.setText(findTestObject('ObjectTangGoiCloud/txtbox_nhap_so_dien_thoi'), '0394361750', 0)
 
-String SerialCamera = '0166aa5d010c7df9'
+String SerialCamera = '361abc3f1b9003cb9'
 
 Mobile.setText(findTestObject('ObjectTangGoiCloud/txt_serial_camera'), SerialCamera, 0)
 

@@ -34,7 +34,7 @@ Mobile.tap(findTestObject('ObjectChiaSeNha/Menu_Quan_Ly_Nha'), 0)
 
 TestObject houseObject = new TestObject('houseObject')
 
-houseObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$GlobalVariable.houseNameShared_Admin')]")
+houseObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup//android.widget.TextView[contains(@text,'$GlobalVariable.houseNameShared_Member')]")
 
 'Nhấn vào nhà My Home'
 Mobile.tap(houseObject, 0 // tap vào Nhà được chia sẻ:" Nhà Chia Sẻ"
@@ -87,7 +87,7 @@ tapDynamicObject('//android.widget.TextView[1]', 0)
 
 TestObject houseObject_home = new TestObject()
 
-houseObject_home.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//androidx.appcompat.widget.LinearLayoutCompat[ .//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Admin'] and .//android.widget.ImageView]")
+houseObject_home.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//androidx.appcompat.widget.LinearLayoutCompat[ .//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Member'] and .//android.widget.ImageView]")
 
 // Kiểm tra sự tồn tại
 'Check tồn tại nhà trên popup chọn nhà sau khi rời nhà  trên màn trang chủ--> Không tồn tại'
@@ -121,7 +121,7 @@ Mobile.tap(houseObject, 0)
 
 TestObject peopleObject = new TestObject('peopleObject')
 
-peopleObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.Bietdanh_Admin'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared']]")
+peopleObject.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[.//android.widget.TextView[@text='$GlobalVariable.Bietdanh_Member'] and .//android.widget.TextView[@text='$GlobalVariable.user_shared']]")
 
 // Kiểm tra sự tồn tại
 Mobile.verifyElementNotExist(peopleObject, 10 // timeout 10s

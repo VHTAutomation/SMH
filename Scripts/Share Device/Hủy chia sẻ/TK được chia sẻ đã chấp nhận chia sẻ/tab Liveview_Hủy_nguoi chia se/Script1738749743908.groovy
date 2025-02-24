@@ -23,7 +23,7 @@ Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
 Mobile.tap(findTestObject('ObjectManThietBi/opt_chon_cam'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi (1)'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi2'), 0)
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_huy_chia_se_man_chia_se_thiet_bi'), 0)
 
