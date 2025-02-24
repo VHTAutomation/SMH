@@ -23,9 +23,9 @@ Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
 Mobile.tap(findTestObject('ObjectManThietBi/opt_chon_cam'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang (1)'), 0)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi (1)'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi2'), 0)
 
 Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi (1)'), 0)
 

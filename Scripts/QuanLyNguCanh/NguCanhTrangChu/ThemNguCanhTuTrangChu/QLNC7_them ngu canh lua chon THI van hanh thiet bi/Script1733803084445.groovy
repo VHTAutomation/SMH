@@ -46,7 +46,7 @@ Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/btnThi'), 0)
 
 Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucThi/objVanHanhThietBi'), 0)
 
-Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucThi/ObjectVanHanhThietBi/opt_thiet_bi_1'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucThi/ObjectVanHanhThietBi/opt_thiet_bi_2'), 0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucThi/ObjectVanHanhThietBi/opt_quay_den_vi_tri_thiet_lap_truoc'), 
     0)

@@ -23,9 +23,9 @@ Mobile.tap(findTestObject('ObjectManThietBi/Tab_Thietbi'), 0)
 
 Mobile.tap(findTestObject('ObjectManThietBi/opt_chon_cam'), 0)
 
-Mobile.tap(findTestObject('ObjectManThietBi/tab_tinh_nang (1)'), 0)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi (1)'), 0)
+Mobile.tap(findTestObject('ObjectManThietBi/btn_chia_se_thiet_bi2'), 0)
 
 Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_chia_se_thiet_bi (1)'), 0)
 
@@ -37,7 +37,7 @@ Mobile.verifyElementText(findTestObject('ObjectChiaSeThietBi/txt_popup_huy_chia_
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_xac_nhan_popup_huy_chia_se'), 0)
 
-Mobile.verifyElementText(findTestObject('ObjectChiaSeThietBi/popup_da_ngung_chia_se_thiet_bi'), 'Đã ngừng chia sẻ thiết bị ae477ce9c1aa7d0d đến tài khoản 0356573351')
+Mobile.verifyElementText(findTestObject('ObjectChiaSeThietBi/popup_da_ngung_chia_se_thiet_bi'), 'Đã ngừng chia sẻ thiết bị 1ada05b73c0dfa39 đến tài khoản 0356573351')
 
 Mobile.verifyElementVisible(findTestObject('ObjectChiaSeThietBi/title_thong_tin_chia_se'), 0)
 
