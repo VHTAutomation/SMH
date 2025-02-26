@@ -89,6 +89,8 @@ TestObject houseObject_home = new TestObject()
 
 houseObject_home.addProperty('xpath', ConditionType.EQUALS, "//androidx.recyclerview.widget.RecyclerView//androidx.appcompat.widget.LinearLayoutCompat[ .//android.widget.TextView[@text='$GlobalVariable.houseNameShared_Member'] and .//android.widget.ImageView]")
 
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
 // Kiểm tra sự tồn tại
 'Check tồn tại nhà trên popup chọn nhà sau khi rời nhà  trên màn trang chủ--> Không tồn tại'
 Mobile.verifyElementNotExist(houseObject_home, 10)

@@ -76,5 +76,9 @@ Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/ObjectMucChonLichT
 
 Mobile.tap(findTestObject('ObjectNguCanh/ObjectManThemNguCanh/btnLuuNguCanh'), 0)
 
+Mobile.delay(15, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('ObjectNguCanh/btn_lich_su_ngu_canh'), 0)
+
 Mobile.closeApplication()
 

@@ -25,7 +25,7 @@ Mobile.tap(findTestObject('ObjectChiaSeThietBi/icon_chon_cam'), 0)
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/icon_chon_nha_nhan_chia_se'), 0)
 
-Mobile.tap(findTestObject('ObjectChiaSeThietBi/opt_nha_nhan_chia_se'), 0)
+Mobile.tap(findTestObject('ObjectChiaSeThietBi/opt_nha_nhan_chia_se (1)'), 0)
 
 Mobile.tap(findTestObject('ObjectChiaSeThietBi/btn_chap_nhan_chia_se'), 0)
 
