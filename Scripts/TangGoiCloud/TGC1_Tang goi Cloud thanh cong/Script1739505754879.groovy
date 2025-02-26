@@ -90,7 +90,7 @@ Mobile.tap(findTestObject('ObjectTangGoiCloud/icon_lich_su_mua_hang'), 0)
 TestObject historyObject = new TestObject('historyObject')
 
 // XPath để kiểm tra các điều kiện của ImageView và TextView
-historyObject.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1][.//android.widget.ImageView and .//android.widget.TextView[1][@text=\'Lưu trữ sự kiện 3 ngày\'] and .//android.widget.TextView[2][@text=\'1.000đ\'] and .//android.widget.TextView[6][@text=\'Chưa kích hoạt\']]')
+historyObject.addProperty('xpath', ConditionType.EQUALS, '//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1][.//android.widget.ImageView and .//android.widget.TextView[1][@text=\'Lưu trữ sự kiện 3 ngày\'] and .//android.widget.TextView[2][@text=\'1.000đ\'] and .//android.widget.TextView[6][@text=\'Đang sử dụng\']]')
 
 // Kiểm tra sự tồn tại của phần tử trong thời gian chờ 20 giây
 Mobile.verifyElementExist(historyObject, 20)
@@ -103,7 +103,7 @@ Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_Goi_cuoc_luu_tru
 
 Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_dong_truoc_cuoc'), '5 phút')
 
-Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_trang_thai_goi_cuoc'), 'Chưa kích hoạt')
+Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_trang_thai_goi_cuoc'), 'Đang sử dụng')
 
 Mobile.verifyElementText(findTestObject('ObjectTangGoiCloud/txt_tong_tien_thanh_toan'), '1.000đ')
 
